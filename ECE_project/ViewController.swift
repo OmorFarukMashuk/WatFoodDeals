@@ -35,6 +35,14 @@ class ViewController: UIViewController {
         // location service will be on based on the user requirement
         
     }
+    class features{
+        
+        
+        // list of backend features available 
+        
+        
+    }
+    
     
     
     
