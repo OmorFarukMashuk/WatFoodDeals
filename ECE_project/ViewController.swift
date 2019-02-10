@@ -30,6 +30,12 @@ class ViewController: UIViewController {
     }
     
     
+    class addGoogleMap{
+        
+        // location service will be on based on the user requirement
+        
+    }
+    
     
     
     
