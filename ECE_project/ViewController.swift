@@ -15,6 +15,29 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    
+    class localShop{
+        
+        // waterloo plaza or not will be checked here
+        
+        
+    }
+    
+    class studentID{
+        
+        // whether the student is waterloo guy or not will be checked here
+        // could be via email id or could be checked by student number
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }
 
