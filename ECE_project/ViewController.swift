@@ -38,7 +38,8 @@ class ViewController: UIViewController {
     class features{
         
         
-        // list of backend features available 
+        // list of backend features available
+        // some featuers will be hidden to the user, only available to developers
         
         
     }
