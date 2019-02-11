@@ -54,7 +54,9 @@ This project is licensed under academic free license v3.0
 
 # Acknowledgement
 
-*  
+*  Professor Krzysztof Czarnecki
+*  Dr. Michal Antkiewicz
+ 
 
 
 
