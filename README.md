@@ -1,5 +1,4 @@
 
-Abstract
 
 Maintaining budget while keeping the appetit healthy and satisfactory is the biggest challenge a student face during his grad life.
 Knocking several food corners or even googling down every single time manually takes a lot of time during a busy schedule. 
