@@ -5,6 +5,7 @@ Knocking several food corners or even googling down every single time manually t
 Eventhough, getting a cheap but quality food is possible always to find, nothing can beat a trustworthy recommendation combining 
 nearby food stores containing all the offers in a particular day. Perhaps, an app can solve the issue immediately.
 
+
 # Getting Started
 
 Following the instructions below will guide someone copying and running this project at a personal computer. 
