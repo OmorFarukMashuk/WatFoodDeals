@@ -20,7 +20,7 @@ Following the instructions below will guide someone copying and running this pro
 
 Please follow the steps below:
 
-*  Dowload Xcode and swift (latest one)
+*  Download Xcode and swift (latest one)
 *  MacOS operating system (mandatory)
 
 # Running and Test
