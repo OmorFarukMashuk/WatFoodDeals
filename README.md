@@ -50,6 +50,11 @@ Future contributing possibilities will be updated soon..
 
 # License
 
+This project is licensed under academic free license v3.0
+
+# Acknowledgement
+
+*  
 
 
 
