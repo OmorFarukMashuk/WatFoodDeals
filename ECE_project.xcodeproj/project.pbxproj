@@ -22,6 +22,7 @@
 		0FCE27972207A09F00301E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FCE279A2207A09F00301E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FCE279C2207A09F00301E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		872671352229D76100D9822D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,9 +148,11 @@
 			isa = PBXVariantGroup;
 			children = (
 				0FCE27952207A09E00301E08 /* Base */,
+				872671352229D76100D9822D /* en */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = /Users/mohdazfarnazim/Documents/ece_651_ios_project/ECE_project;
+			sourceTree = "<absolute>";
 		};
 		0FCE27992207A09F00301E08 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;

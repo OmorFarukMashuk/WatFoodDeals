@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "HPM-xQ-Cfa"; */
+"HPM-xQ-Cfa.text" = "Email";
+
+/* Class = "UILabel"; text = "ID"; ObjectID = "VZe-5h-Wlc"; */
+"VZe-5h-Wlc.text" = "ID";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "jrv-f7-5Jj"; */
+"jrv-f7-5Jj.text" = "Login";
+
+/* Class = "UILabel"; text = "Restaurant_app"; ObjectID = "rjV-mg-kiO"; */
+"rjV-mg-kiO.text" = "Restaurant_app";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xOm-4F-MNm"; */
+"xOm-4F-MNm.normalTitle" = "Button";
