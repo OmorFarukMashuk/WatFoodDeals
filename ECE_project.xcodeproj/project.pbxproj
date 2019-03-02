@@ -12,6 +12,8 @@
 		0FCE27962207A09E00301E08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCE27942207A09E00301E08 /* Main.storyboard */; };
 		0FCE27982207A09F00301E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FCE27972207A09F00301E08 /* Assets.xcassets */; };
 		0FCE279B2207A09F00301E08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCE27992207A09F00301E08 /* LaunchScreen.storyboard */; };
+		EC611F70222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = EC611F6F222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png */; };
+		ECE0514C222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECE0514B222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0FCE27972207A09F00301E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FCE279A2207A09F00301E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FCE279C2207A09F00301E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC611F6F222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-02-01 at 1.30.31 AM.png"; sourceTree = "<group>"; };
+		ECE0514B222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "preview_Aurora-Reloaded-Ocean-2048x2048.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				0FCE27942207A09E00301E08 /* Main.storyboard */,
 				0FCE27972207A09F00301E08 /* Assets.xcassets */,
 				0FCE27992207A09F00301E08 /* LaunchScreen.storyboard */,
+				ECE0514B222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg */,
+				EC611F6F222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png */,
 				0FCE279C2207A09F00301E08 /* Info.plist */,
 			);
 			path = ECE_project;
@@ -123,7 +129,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FCE279B2207A09F00301E08 /* LaunchScreen.storyboard in Resources */,
+				EC611F70222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png in Resources */,
 				0FCE27982207A09F00301E08 /* Assets.xcassets in Resources */,
+				ECE0514C222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg in Resources */,
 				0FCE27962207A09E00301E08 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,7 +157,7 @@
 				0FCE27952207A09E00301E08 /* Base */,
 			);
 			name = Main.storyboard;
-			path = /Users/mohdazfarnazim/Documents/ece_651_ios_project/ECE_project;
+			path = /Users/shahriarreal/Desktop/ece_651_ios_project;
 			sourceTree = "<absolute>";
 		};
 		0FCE27992207A09F00301E08 /* LaunchScreen.storyboard */ = {
