@@ -149,7 +149,7 @@
 				0FCE27952207A09E00301E08 /* Base */,
 			);
 			name = Main.storyboard;
-			path = /Users/mohdazfarnazim/Documents/ece_651_ios_project/ECE_project;
+			path = /Users/shahriarreal/Desktop/ece_651_ios_project/ECE_project;
 			sourceTree = "<absolute>";
 		};
 		0FCE27992207A09F00301E08 /* LaunchScreen.storyboard */ = {
