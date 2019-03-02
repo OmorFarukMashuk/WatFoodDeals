@@ -11,7 +11,7 @@
 		0FCE27932207A09E00301E08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCE27922207A09E00301E08 /* ViewController.swift */; };
 		0FCE27962207A09E00301E08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCE27942207A09E00301E08 /* Main.storyboard */; };
 		0FCE27982207A09F00301E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FCE27972207A09F00301E08 /* Assets.xcassets */; };
-		0FCE279B2207A09F00301E08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCE27992207A09F00301E08 /* LaunchScreen.storyboard */; };
+		0FCE279B2207A09F00301E08 /* Sign-upPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCE27992207A09F00301E08 /* Sign-upPage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		0FCE27922207A09E00301E08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0FCE27952207A09E00301E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FCE27972207A09F00301E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0FCE279A2207A09F00301E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0FCE279A2207A09F00301E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Sign-upPage.storyboard"; sourceTree = "<group>"; };
 		0FCE279C2207A09F00301E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +58,7 @@
 				0FCE27922207A09E00301E08 /* ViewController.swift */,
 				0FCE27942207A09E00301E08 /* Main.storyboard */,
 				0FCE27972207A09F00301E08 /* Assets.xcassets */,
-				0FCE27992207A09F00301E08 /* LaunchScreen.storyboard */,
+				0FCE27992207A09F00301E08 /* Sign-upPage.storyboard */,
 				0FCE279C2207A09F00301E08 /* Info.plist */,
 			);
 			path = ECE_project;
@@ -122,7 +122,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FCE279B2207A09F00301E08 /* LaunchScreen.storyboard in Resources */,
+				0FCE279B2207A09F00301E08 /* Sign-upPage.storyboard in Resources */,
 				0FCE27982207A09F00301E08 /* Assets.xcassets in Resources */,
 				0FCE27962207A09E00301E08 /* Main.storyboard in Resources */,
 			);
@@ -152,12 +152,12 @@
 			path = /Users/mohdazfarnazim/Documents/ece_651_ios_project/ECE_project;
 			sourceTree = "<absolute>";
 		};
-		0FCE27992207A09F00301E08 /* LaunchScreen.storyboard */ = {
+		0FCE27992207A09F00301E08 /* Sign-upPage.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0FCE279A2207A09F00301E08 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = "Sign-upPage.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
