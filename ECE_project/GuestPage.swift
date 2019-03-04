@@ -13,6 +13,10 @@ class GuestPage: UIViewController {
         self.performSegue(withIdentifier: "HomeSegue2", sender: self)
     }
     
+    @IBAction func SignUpPagebutton(_ sender: Any) {
+        self.performSegue(withIdentifier: "SignUpPageSegoe2", sender: self)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
