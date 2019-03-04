@@ -8,8 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class HomeViewController: UIViewController {
+    
+    let name = "ECE651"
+    
+    @IBOutlet weak var userName: UITextField!
+    
+    @IBOutlet weak var passWord: UITextField!
+    
+    @IBAction func loginbutton(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomePageSegue", sender: self)
+    }
+    @IBOutlet weak var error: UILabel!
+  
+    @IBAction func SignUpPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "SignUpPageSegue", sender: self)
+        
+        
+    }
+    
+    
+    
+    @IBAction func GuestPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "GuestSegue", sender: self)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
