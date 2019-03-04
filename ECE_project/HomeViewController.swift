@@ -10,18 +10,33 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-//    let name = "ECE651"
-    
+  let name = "ECE651"
+    let pw = "1234"
+
     @IBOutlet weak var userName: UITextField!
     
     @IBOutlet weak var passWord: UITextField!
     
    
     
+    @IBOutlet weak var errormessage: UILabel!
     
     @IBOutlet weak var error: UILabel!
     @IBAction func LoginPressed(_ sender: Any) {
+        if userName.text == "ECE651" && passWord.text == "1234" {
         self.performSegue(withIdentifier: "HomePageSegue", sender: self)
+        
+        
+        }
+        
+        else {
+            errormessage.text = "Wrong credentials, TRY AGAIN!"
+                return
+            
+        }
+        
+        
+        
         
     }
     
