@@ -10,17 +10,21 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    let name = "ECE651"
+//    let name = "ECE651"
     
     @IBOutlet weak var userName: UITextField!
     
     @IBOutlet weak var passWord: UITextField!
     
-    @IBAction func loginbutton(_ sender: Any) {
-        self.performSegue(withIdentifier: "HomePageSegue", sender: self)
-    }
+   
+    
+    
     @IBOutlet weak var error: UILabel!
-  
+    @IBAction func LoginPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomePageSegue", sender: self)
+        
+    }
+    
     @IBAction func SignUpPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "SignUpPageSegue", sender: self)
         

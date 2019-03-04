@@ -10,10 +10,19 @@ import UIKit
 
 class HomePage: UIViewController {
    
-    @IBAction func HomePressed3(_ sender: Any) {
-        self.performSegue(withIdentifier: "HomePageSegue1", sender: self)
-        
+   
+    @IBAction func HomeSegueMain(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomeSegue3", sender: self)
     }
+    
+    
+    
+    
+
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
