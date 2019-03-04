@@ -464,7 +464,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qR8-KV-LOd">
-                                <rect key="frame" x="11" y="23" width="51" height="26"/>
+                                <rect key="frame" x="11" y="23" width="47" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Screen Shot 2019-03-03 at 3.50.39 PM.png"/>
                                 <connections>
@@ -481,7 +481,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PSs-QN-XH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-175" y="-475"/>
+            <point key="canvasLocation" x="-175.19999999999999" y="-475.41229385307349"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="gUL-X5-goL">
@@ -641,6 +641,6 @@
         <image name="steak+wrap+2.jpg" width="1000" height="750"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nmv-qe-qR0"/>
+        <segue reference="Gqr-1P-J5K"/>
     </inferredMetricsTieBreakers>
 </document>
