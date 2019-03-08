@@ -21,6 +21,10 @@
 		87481BCB222C8AD200CBF41E /* steak+wrap+2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87481BC9222C8AD000CBF41E /* steak+wrap+2.jpg */; };
 		87481BCE222C8AF700CBF41E /* Alley.png in Resources */ = {isa = PBXBuildFile; fileRef = 87481BCD222C8AF700CBF41E /* Alley.png */; };
 		87481BD0222CC46500CBF41E /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87481BCF222CC46500CBF41E /* Error.swift */; };
+		EC1B877E2231A7DA0025401D /* NewsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1B877D2231A7DA0025401D /* NewsPage.swift */; };
+		EC1B87802231AE7E0025401D /* SocialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1B877F2231AE7E0025401D /* SocialPage.swift */; };
+		EC1B87822231C0B90025401D /* NewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1B87812231C0B90025401D /* NewPage.swift */; };
+		EC1B87842231C1890025401D /* Facebook_logo_(square).png in Resources */ = {isa = PBXBuildFile; fileRef = EC1B87832231C1880025401D /* Facebook_logo_(square).png */; };
 		EC611F70222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = EC611F6F222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png */; };
 		ECE0514C222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECE0514B222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg */; };
 /* End PBXBuildFile section */
@@ -42,6 +46,10 @@
 		87481BC9222C8AD000CBF41E /* steak+wrap+2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "steak+wrap+2.jpg"; sourceTree = "<group>"; };
 		87481BCD222C8AF700CBF41E /* Alley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alley.png; sourceTree = "<group>"; };
 		87481BCF222CC46500CBF41E /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		EC1B877D2231A7DA0025401D /* NewsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPage.swift; sourceTree = "<group>"; };
+		EC1B877F2231AE7E0025401D /* SocialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialPage.swift; sourceTree = "<group>"; };
+		EC1B87812231C0B90025401D /* NewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPage.swift; sourceTree = "<group>"; };
+		EC1B87832231C1880025401D /* Facebook_logo_(square).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook_logo_(square).png"; sourceTree = "<group>"; };
 		EC611F6F222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-02-01 at 1.30.31 AM.png"; sourceTree = "<group>"; };
 		ECE0514B222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "preview_Aurora-Reloaded-Ocean-2048x2048.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +84,7 @@
 		0FCE278F2207A09D00301E08 /* ECE_project */ = {
 			isa = PBXGroup;
 			children = (
+				EC1B87832231C1880025401D /* Facebook_logo_(square).png */,
 				0FCE27902207A09E00301E08 /* AppDelegate.swift */,
 				0FCE27922207A09E00301E08 /* HomeViewController.swift */,
 				0FCE27972207A09F00301E08 /* Assets.xcassets */,
@@ -93,6 +102,9 @@
 				87481BC9222C8AD000CBF41E /* steak+wrap+2.jpg */,
 				87481BCD222C8AF700CBF41E /* Alley.png */,
 				87481BCF222CC46500CBF41E /* Error.swift */,
+				EC1B877D2231A7DA0025401D /* NewsPage.swift */,
+				EC1B877F2231AE7E0025401D /* SocialPage.swift */,
+				EC1B87812231C0B90025401D /* NewPage.swift */,
 			);
 			path = ECE_project;
 			sourceTree = "<group>";
@@ -164,6 +176,7 @@
 				ECE0514C222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg in Resources */,
 				87481BCE222C8AF700CBF41E /* Alley.png in Resources */,
 				87481BC6222C75B200CBF41E /* Screen Shot 2019-03-03 at 3.50.39 PM.png in Resources */,
+				EC1B87842231C1890025401D /* Facebook_logo_(square).png in Resources */,
 				87481BCB222C8AD200CBF41E /* steak+wrap+2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,9 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC1B877E2231A7DA0025401D /* NewsPage.swift in Sources */,
 				87481BC8222C888E00CBF41E /* HomePage.swift in Sources */,
 				87481BC2222C5F8D00CBF41E /* SignUpPage.swift in Sources */,
+				EC1B87802231AE7E0025401D /* SocialPage.swift in Sources */,
 				0FCE27932207A09E00301E08 /* HomeViewController.swift in Sources */,
+				EC1B87822231C0B90025401D /* NewPage.swift in Sources */,
 				0FCE27912207A09E00301E08 /* AppDelegate.swift in Sources */,
 				87481BD0222CC46500CBF41E /* Error.swift in Sources */,
 				87481BC4222C656200CBF41E /* GuestPage.swift in Sources */,
