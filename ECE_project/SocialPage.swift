@@ -12,20 +12,41 @@ class SocialPage: UIViewController {
     
     @IBAction func AntysKitchen(_ sender: Any) {
        
-        UIApplication.shared.open(URL(string: "https://www.facebook.com/AuntysWaterloo/")! as URL, options[:] , completionHandler: nil)
-    }
+
+        UIApplication.shared.open(URL(string: "https://www.facebook.com/auntyskitchen/")! as URL, options: [:], completionHandler: nil)
+        
+        
+        }
+        
+        
+    
     
     @IBAction func Shinwa(_ sender: Any) {
+          UIApplication.shared.open(URL(string: "http://www.shinwa.ca")! as URL, options: [:], completionHandler: nil)
+        
     }
     
     @IBAction func KabobHut(_ sender: Any) {
+        
+        
+        UIApplication.shared.open(URL(string: "https://www.facebook.com/KabobHutRestaurant/")! as URL, options: [:], completionHandler: nil)
+        
     }
     
+    
+    
     @IBAction func MongolianGrill(_ sender: Any) {
+        
+        UIApplication.shared.open(URL(string: "https://www.facebook.com/WaterlooMongolianGrill/")! as URL, options: [:], completionHandler: nil)
+
+        
     }
     
     
     @IBAction func TheAlley(_ sender: Any) {
+        
+        UIApplication.shared.open(URL(string: "https://www.facebook.com/TheAlleyCanada/")! as URL, options: [:], completionHandler: nil)
+
     }
     
     

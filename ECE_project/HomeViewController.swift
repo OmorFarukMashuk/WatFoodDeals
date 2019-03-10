@@ -22,6 +22,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var errormessage: UILabel!
     
     @IBOutlet weak var error: UILabel!
+    
+    
+    
+    
+    
+    
     @IBAction func LoginPressed(_ sender: Any) {
         if userName.text == "ECE651" && passWord.text == "1234" {
         self.performSegue(withIdentifier: "HomePageSegue", sender: self)
