@@ -11,8 +11,8 @@ import CoreData
 
 class HomeViewController: UIViewController {
     
-    let name = "ECE651"
-    let pw = "1234"
+//    let name = "ECE651"
+//    let pw = "1234"
     
     @IBOutlet weak var userName: UITextField!
     
