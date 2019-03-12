@@ -851,6 +851,35 @@
             </objects>
             <point key="canvasLocation" x="1461.5999999999999" y="1869.7151424287858"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="itS-yX-KXT">
+            <objects>
+                <viewController storyboardIdentifier="Map" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KJh-Ho-ECZ" customClass="Map" customModule="ECE_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yhe-Eb-oFW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="U2n-Q7-hj7">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="caO-N8-JVU" firstAttribute="trailing" secondItem="U2n-Q7-hj7" secondAttribute="trailing" id="1d1-iY-HIK"/>
+                            <constraint firstItem="caO-N8-JVU" firstAttribute="bottom" secondItem="U2n-Q7-hj7" secondAttribute="bottom" id="6SM-6z-1Au"/>
+                            <constraint firstItem="U2n-Q7-hj7" firstAttribute="leading" secondItem="caO-N8-JVU" secondAttribute="leading" id="UCX-Hy-VLk"/>
+                            <constraint firstItem="U2n-Q7-hj7" firstAttribute="top" secondItem="caO-N8-JVU" secondAttribute="top" id="jon-Kt-TEY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="caO-N8-JVU"/>
+                    </view>
+                    <connections>
+                        <outlet property="MapOutlet" destination="U2n-Q7-hj7" id="xpC-Bn-Cra"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P6E-IS-HkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="2210"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Alley.png" width="702" height="482"/>
