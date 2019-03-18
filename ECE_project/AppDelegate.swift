@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         
-        print(urls[urls.count-1] as URL)
+        //print(urls[urls.count-1] as URL)
         
         print(urls[0])
         print("path finished")
