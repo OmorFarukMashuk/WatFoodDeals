@@ -277,88 +277,6 @@
             </objects>
             <point key="canvasLocation" x="-522.39999999999998" y="893.70314842578716"/>
         </scene>
-        <!--Drop Down-->
-        <scene sceneID="S2b-Ym-m0M">
-            <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Ns-5J-COq" customClass="dropDown" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="l3D-qn-Pzf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iwU-vu-7Uk">
-                                <rect key="frame" x="0.0" y="20" width="375" height="164"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FM6-8Q-VYK">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
-                                        <color key="backgroundColor" red="0.20392156862745098" green="0.19215686274509802" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="OPTIONS">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="dropDownAction:" destination="4Ns-5J-COq" eventType="touchUpInside" id="bY6-0V-JUk"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mO-CJ-tML">
-                                        <rect key="frame" x="0.0" y="36" width="375" height="32"/>
-                                        <color key="backgroundColor" red="0.66936001712328763" green="0.46941887842465752" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                        <state key="normal" title="Social">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPL-9c-jd2">
-                                        <rect key="frame" x="0.0" y="68" width="375" height="32"/>
-                                        <color key="backgroundColor" red="0.66936001712328763" green="0.46941887842465752" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                        <state key="normal" title="Location">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfo-GX-8N0">
-                                        <rect key="frame" x="0.0" y="100" width="375" height="32"/>
-                                        <color key="backgroundColor" red="0.66936001712328763" green="0.46941887842465752" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                        <state key="normal" title="News">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fe-8H-Mkv">
-                                        <rect key="frame" x="0.0" y="132" width="375" height="32"/>
-                                        <color key="backgroundColor" red="0.66936001712328763" green="0.46941887842465752" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                        <state key="normal" title="Home">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="9fe-8H-Mkv" secondAttribute="bottom" constant="20" symbolic="YES" id="TZF-lJ-qMw"/>
-                                    <constraint firstItem="cfo-GX-8N0" firstAttribute="top" secondItem="wPL-9c-jd2" secondAttribute="bottom" constant="8" symbolic="YES" id="bF7-ad-B6D"/>
-                                    <constraint firstItem="9fe-8H-Mkv" firstAttribute="top" secondItem="cfo-GX-8N0" secondAttribute="bottom" constant="8" symbolic="YES" id="c2B-Sf-5cw"/>
-                                    <constraint firstItem="8mO-CJ-tML" firstAttribute="top" secondItem="FM6-8Q-VYK" secondAttribute="bottom" constant="8" symbolic="YES" id="rj6-du-BJO"/>
-                                    <constraint firstItem="wPL-9c-jd2" firstAttribute="top" secondItem="8mO-CJ-tML" secondAttribute="bottom" constant="8" symbolic="YES" id="wPg-QV-Cl9"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="iwU-vu-7Uk" firstAttribute="leading" secondItem="hVd-sD-d5b" secondAttribute="leading" id="2WK-vs-gID"/>
-                            <constraint firstItem="iwU-vu-7Uk" firstAttribute="top" secondItem="hVd-sD-d5b" secondAttribute="top" id="4ss-ds-eA0"/>
-                            <constraint firstItem="hVd-sD-d5b" firstAttribute="trailing" secondItem="iwU-vu-7Uk" secondAttribute="trailing" id="yav-2N-yV0"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="hVd-sD-d5b"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="7Hj-Zq-qDp"/>
-                    <connections>
-                        <outlet property="dropDownOutlet" destination="FM6-8Q-VYK" id="No5-2k-XT2"/>
-                        <outletCollection property="dropDownCollections" destination="8mO-CJ-tML" id="yDo-6D-bTV"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HRV-Jq-gd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1604" y="1107"/>
-        </scene>
         <!--Sign Up Page-->
         <scene sceneID="CbZ-aD-q1V">
             <objects>
@@ -811,6 +729,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="TdC-di-Xay"/>
-        <segue reference="nmv-qe-qR0"/>
+        <segue reference="Gqr-1P-J5K"/>
     </inferredMetricsTieBreakers>
 </document>
