@@ -27,7 +27,6 @@
 		EC1B87862235A8580025401D /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1B87852235A8580025401D /* Map.swift */; };
 		EC1B87882235A91C0025401D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1B87872235A91C0025401D /* File.swift */; };
 		EC611F70222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = EC611F6F222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png */; };
-		ECC6614C223F6D2000AE7628 /* c700x420.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECC6614B223F6D1F00AE7628 /* c700x420.jpg */; };
 		ECE0514C222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECE0514B222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +53,6 @@
 		EC1B87852235A8580025401D /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		EC1B87872235A91C0025401D /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		EC611F6F222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-02-01 at 1.30.31 AM.png"; sourceTree = "<group>"; };
-		ECC6614B223F6D1F00AE7628 /* c700x420.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c700x420.jpg; sourceTree = "<group>"; };
 		ECE0514B222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "preview_Aurora-Reloaded-Ocean-2048x2048.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +88,6 @@
 			children = (
 				EC1B87832231C1880025401D /* Facebook_logo_(square).png */,
 				0FCE27902207A09E00301E08 /* AppDelegate.swift */,
-				ECC6614B223F6D1F00AE7628 /* c700x420.jpg */,
 				0FCE27922207A09E00301E08 /* HomeViewController.swift */,
 				0FCE27972207A09F00301E08 /* Assets.xcassets */,
 				0FCE27992207A09F00301E08 /* Main.storyboard */,
@@ -184,7 +181,6 @@
 				87481BC6222C75B200CBF41E /* Screen Shot 2019-03-03 at 3.50.39 PM.png in Resources */,
 				EC1B87842231C1890025401D /* Facebook_logo_(square).png in Resources */,
 				87481BCB222C8AD200CBF41E /* steak+wrap+2.jpg in Resources */,
-				ECC6614C223F6D2000AE7628 /* c700x420.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

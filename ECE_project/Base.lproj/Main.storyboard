@@ -124,10 +124,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="c700x420.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oFg-X8-wwa">
-                                <rect key="frame" x="67" y="366" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -893,7 +889,6 @@
         <image name="Screen Shot 2019-02-01 at 1.30.31 AM.png" width="368" height="392"/>
         <image name="Screen Shot 2019-03-03 at 3.50.39 PM.png" width="464" height="206"/>
         <image name="Shinwa.png" width="712" height="456"/>
-        <image name="c700x420.jpg" width="700" height="420"/>
         <image name="preview_Aurora-Reloaded-Ocean-2048x2048.jpg" width="325" height="350"/>
         <image name="steak+wrap+2.jpg" width="1000" height="750"/>
     </resources>
