@@ -482,12 +482,18 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="ConfirmRegPressed:" destination="tjn-Pv-bHQ" eventType="touchUpInside" id="5z6-KP-hgP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UtY-r7-uQ8"/>
                     </view>
                     <connections>
+                        <outlet property="confirmpass" destination="Wjg-er-9WR" id="MW1-hx-K2j"/>
+                        <outlet property="emailtext" destination="xXY-mD-OAt" id="Xzb-dT-noz"/>
+                        <outlet property="passtext" destination="qEK-IS-efn" id="BaH-uU-gFe"/>
                         <segue destination="01J-lp-oVM" kind="showDetail" identifier="HomeSegue1" id="Gqr-1P-J5K"/>
                     </connections>
                 </viewController>
@@ -899,6 +905,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="TdC-di-Xay"/>
-        <segue reference="G8z-d6-YIy"/>
+        <segue reference="Gqr-1P-J5K"/>
     </inferredMetricsTieBreakers>
 </document>

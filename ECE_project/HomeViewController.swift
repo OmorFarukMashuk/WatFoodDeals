@@ -7,42 +7,76 @@
 //
 
 import UIKit
+import CoreData
 
 class HomeViewController: UIViewController {
     
-  let name = "ECE651"
-    let pw = "1234"
-
+//    let name = "ECE651"
+//    let pw = "1234"
+    
     @IBOutlet weak var userName: UITextField!
     
     @IBOutlet weak var passWord: UITextField!
-    
-   
     
     @IBOutlet weak var errormessage: UILabel!
     
     @IBOutlet weak var error: UILabel!
     
-    
+    var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     
     
     
     @IBAction func LoginPressed(_ sender: Any) {
-        if userName.text == "ECE651" && passWord.text == "1234" {
-        self.performSegue(withIdentifier: "HomePageSegue", sender: self)
         
         
-        }
+        //        if userName.text == "ECE651" && passWord.text == "1234" {
+        //        self.performSegue(withIdentifier: "HomePageSegue", sender: self)
+        //
+        //
+        //        }
+        //
+        //                else {
+        //                    errormessage.text = "Wrong credentials, TRY AGAIN!"
+        //                        return
+        //
+        //                }
         
-        else {
-            errormessage.text = "Wrong credentials, TRY AGAIN!"
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+        //request.predicate = NSPredicate(format: "age = %@", "12")
+        request.returnsObjectsAsFaults = false
+        do {
+            
+            var loginflag = false
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                
+                //print(data.value(forKey: "email") as! String)
+                if((data.value(forKey: "email") as! String) == userName.text){
+                    if((data.value(forKey: "password") as! String) == passWord.text){
+                        self.performSegue(withIdentifier: "HomePageSegue", sender: self)
+                        loginflag = true
+                    }
+                    
+                }
+            }
+            
+            if(loginflag == false){
+                let alert = UIAlertController(title: "Failed", message: "incorrect username/password", preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: .default)
+                alert.addAction(action)
+                present(alert, animated: true, completion: nil)
                 return
+                
+            }
             
         }
-        
-        
-        
+        catch {
+            
+            //print("Failed")
+            
+        }
         
     }
     
@@ -51,8 +85,6 @@ class HomeViewController: UIViewController {
         
         
     }
-    
-    
     
     @IBAction func GuestPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "GuestSegue", sender: self)
@@ -63,7 +95,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     
     class localShop{
         
@@ -93,15 +125,5 @@ class HomeViewController: UIViewController {
         
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
 }
 
