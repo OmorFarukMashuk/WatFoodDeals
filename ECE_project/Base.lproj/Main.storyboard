@@ -482,12 +482,18 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="ConfirmRegPressed:" destination="tjn-Pv-bHQ" eventType="touchUpInside" id="i9y-mJ-wKz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UtY-r7-uQ8"/>
                     </view>
                     <connections>
+                        <outlet property="a" destination="qEK-IS-efn" id="Led-1c-jMf"/>
+                        <outlet property="b" destination="Wjg-er-9WR" id="lrT-M8-hje"/>
+                        <outlet property="c" destination="xXY-mD-OAt" id="8P6-6I-qgj"/>
                         <segue destination="01J-lp-oVM" kind="showDetail" identifier="HomeSegue1" id="Gqr-1P-J5K"/>
                     </connections>
                 </viewController>

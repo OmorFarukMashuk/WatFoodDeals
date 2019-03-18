@@ -11,6 +11,7 @@
 		0FCE27932207A09E00301E08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCE27922207A09E00301E08 /* HomeViewController.swift */; };
 		0FCE27982207A09F00301E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FCE27972207A09F00301E08 /* Assets.xcassets */; };
 		0FCE279B2207A09F00301E08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCE27992207A09F00301E08 /* Main.storyboard */; };
+		3FA857C1223F4803004BAD6A /* odbModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FA857BF223F4803004BAD6A /* odbModel.xcdatamodeld */; };
 		87481BBD222C56D600CBF41E /* Aunty's.png in Resources */ = {isa = PBXBuildFile; fileRef = 87481BBA222C56D500CBF41E /* Aunty's.png */; };
 		87481BBE222C56D600CBF41E /* Shinwa.png in Resources */ = {isa = PBXBuildFile; fileRef = 87481BBB222C56D500CBF41E /* Shinwa.png */; };
 		87481BBF222C56D600CBF41E /* Kabob.png in Resources */ = {isa = PBXBuildFile; fileRef = 87481BBC222C56D500CBF41E /* Kabob.png */; };
@@ -37,6 +38,7 @@
 		0FCE27972207A09F00301E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FCE279A2207A09F00301E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FCE279C2207A09F00301E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA857C0223F4803004BAD6A /* odbModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = odbModel.xcdatamodel; sourceTree = "<group>"; };
 		87481BBA222C56D500CBF41E /* Aunty's.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aunty's.png"; sourceTree = "<group>"; };
 		87481BBB222C56D500CBF41E /* Shinwa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shinwa.png; sourceTree = "<group>"; };
 		87481BBC222C56D500CBF41E /* Kabob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kabob.png; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				EC1B877F2231AE7E0025401D /* SocialPage.swift */,
 				EC1B87852235A8580025401D /* Map.swift */,
 				EC1B87872235A91C0025401D /* File.swift */,
+				3FA857BF223F4803004BAD6A /* odbModel.xcdatamodeld */,
 			);
 			path = ECE_project;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				87481BD0222CC46500CBF41E /* Error.swift in Sources */,
 				EC1B87862235A8580025401D /* Map.swift in Sources */,
 				87481BC4222C656200CBF41E /* GuestPage.swift in Sources */,
+				3FA857C1223F4803004BAD6A /* odbModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +394,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FA857BF223F4803004BAD6A /* odbModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FA857C0223F4803004BAD6A /* odbModel.xcdatamodel */,
+			);
+			currentVersion = 3FA857C0223F4803004BAD6A /* odbModel.xcdatamodel */;
+			path = odbModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0FCE27852207A09D00301E08 /* Project object */;
 }
