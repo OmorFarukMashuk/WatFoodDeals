@@ -33,6 +33,7 @@
 		0FCE27972207A09F00301E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FCE279A2207A09F00301E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FCE279C2207A09F00301E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F18425E2237A93E00DB3D53 /* ECE_project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ECE_project.entitlements; sourceTree = "<group>"; };
 		3F1E48AA2236228900AD89ED /* odbModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = odbModel.xcdatamodel; sourceTree = "<group>"; };
 		87481BBA222C56D500CBF41E /* Aunty's.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aunty's.png"; sourceTree = "<group>"; };
 		87481BBB222C56D500CBF41E /* Shinwa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shinwa.png; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 		0FCE278F2207A09D00301E08 /* ECE_project */ = {
 			isa = PBXGroup;
 			children = (
+				3F18425E2237A93E00DB3D53 /* ECE_project.entitlements */,
 				0FCE27902207A09E00301E08 /* AppDelegate.swift */,
 				0FCE27922207A09E00301E08 /* HomeViewController.swift */,
 				0FCE27972207A09F00301E08 /* Assets.xcassets */,
@@ -132,6 +134,11 @@
 				TargetAttributes = {
 					0FCE278C2207A09D00301E08 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -323,6 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ECE_project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -340,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ECE_project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
