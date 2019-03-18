@@ -103,7 +103,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="SignUpPressed:" destination="01J-lp-oVM" eventType="touchUpInside" id="vGR-Gi-sXe"/>
+                                    <action selector="SignUpPressed:" destination="01J-lp-oVM" eventType="touchUpInside" id="hAM-X1-hmf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puX-qe-na0">
@@ -491,9 +491,9 @@
                         <viewLayoutGuide key="safeArea" id="UtY-r7-uQ8"/>
                     </view>
                     <connections>
-                        <outlet property="a" destination="qEK-IS-efn" id="Led-1c-jMf"/>
-                        <outlet property="b" destination="Wjg-er-9WR" id="lrT-M8-hje"/>
-                        <outlet property="c" destination="xXY-mD-OAt" id="8P6-6I-qgj"/>
+                        <outlet property="confirmpass" destination="Wjg-er-9WR" id="1KG-1O-OlP"/>
+                        <outlet property="emailtext" destination="xXY-mD-OAt" id="34C-4z-LwQ"/>
+                        <outlet property="passtext" destination="qEK-IS-efn" id="l48-pF-fGf"/>
                         <segue destination="01J-lp-oVM" kind="showDetail" identifier="HomeSegue1" id="Gqr-1P-J5K"/>
                     </connections>
                 </viewController>
@@ -900,6 +900,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="TdC-di-Xay"/>
-        <segue reference="nmv-qe-qR0"/>
+        <segue reference="Gqr-1P-J5K"/>
     </inferredMetricsTieBreakers>
 </document>

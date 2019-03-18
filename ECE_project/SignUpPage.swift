@@ -11,10 +11,11 @@ import CoreData
 
 class SignUpPage: UIViewController {
     
+    
     @IBOutlet var passtext: UITextField!
+    
     @IBOutlet var confirmpass: UITextField!
     @IBOutlet var emailtext: UITextField!
-
     
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -27,10 +28,11 @@ class SignUpPage: UIViewController {
     
         
         //getting values from textfiield
+        
+        
         let email = self.emailtext!.text
         let pass = self.passtext!.text
         let pass2 = self.confirmpass!.text
-        
         if (email?.isEmpty)!{
             self.emailtext.layer.borderColor = UIColor.red.cgColor
             return

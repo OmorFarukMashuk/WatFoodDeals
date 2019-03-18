@@ -82,9 +82,8 @@ class HomeViewController: UIViewController {
     
     @IBAction func SignUpPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "SignUpPageSegue", sender: self)
-        
-        
     }
+
     
     @IBAction func GuestPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "GuestSegue", sender: self)

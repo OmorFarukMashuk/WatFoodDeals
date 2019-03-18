@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-
+        
         print(urls[urls.count-1] as URL)
         
         print(urls[0])
@@ -48,8 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         self.saveContext()
-
-    
+        
+        
     }
     
     // MARK: - Core Data stack
