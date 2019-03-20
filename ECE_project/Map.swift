@@ -12,6 +12,11 @@ import MapKit
 
 class Map: UIViewController {
     
+    
+    @IBAction func backButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "LtoHSegue", sender: self)
+    }
+    
     @IBOutlet weak var MapOutlet: MKMapView!
     
     

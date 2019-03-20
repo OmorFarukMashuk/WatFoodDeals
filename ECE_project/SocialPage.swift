@@ -10,6 +10,11 @@ import UIKit
 
 class SocialPage: UIViewController {
     
+    @IBAction func backButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "StoHSegue", sender: self)
+    }
+    
+    
     @IBAction func AntysKitchen(_ sender: Any) {
        
 
