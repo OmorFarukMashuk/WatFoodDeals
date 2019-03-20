@@ -36,6 +36,7 @@ class HomePage: UIViewController {
         case news = "News"
         case social = "Social"
         case locations = "Locations"
+        case logout = "LogOut"
     }
     
     @IBAction func optionSelected(_ sender: UIButton) {
@@ -50,6 +51,8 @@ class HomePage: UIViewController {
             self.performSegue(withIdentifier: "SocialSegue1", sender: self)
         case .locations:
             self.performSegue(withIdentifier: "LocationsSegue1", sender: self)
+        case .logout:
+            self.performSegue(withIdentifier: "LogOutSegue", sender: self)
         default:
             return
         }

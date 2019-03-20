@@ -279,13 +279,94 @@
                                     <action selector="SignUpPagebutton:" destination="sho-ZC-Whg" eventType="touchUpInside" id="vlM-eo-VXa"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XOr-ve-l31">
+                                <rect key="frame" x="290" y="28" width="69" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEL-oI-J5R">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="063-83-nej"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="OPTIONS">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleOptions:" destination="sho-ZC-Whg" eventType="touchUpInside" id="NJP-hI-BJT"/>
+                                            <action selector="handleOptions:" destination="cfg-8w-t1P" eventType="touchUpInside" id="uEa-DR-aXz"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaF-a2-Igy">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="boB-bO-9Ik"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <state key="normal" title="News">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionSelected:" destination="cfg-8w-t1P" eventType="touchUpInside" id="3FU-H0-3jH"/>
+                                            <action selector="optionSelected:" destination="sho-ZC-Whg" eventType="touchUpInside" id="yeR-IT-dIp"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDc-lS-Qdr">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="qsr-P5-cl4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <state key="normal" title="Social">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionSelected:" destination="cfg-8w-t1P" eventType="touchUpInside" id="HYA-YU-shK"/>
+                                            <action selector="optionSelected:" destination="sho-ZC-Whg" eventType="touchUpInside" id="iXb-5I-Bjf"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epc-yK-ytb">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Fxr-VF-BTx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <state key="normal" title="Locations">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionSelected:" destination="sho-ZC-Whg" eventType="touchUpInside" id="aqS-ip-uop"/>
+                                            <action selector="optionSelected:" destination="cfg-8w-t1P" eventType="touchUpInside" id="geT-7G-526"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dEL-oI-J5R" firstAttribute="leading" secondItem="XOr-ve-l31" secondAttribute="leading" id="B8g-gM-SXk"/>
+                                    <constraint firstItem="CaF-a2-Igy" firstAttribute="leading" secondItem="XOr-ve-l31" secondAttribute="leading" id="GpL-qg-fAH"/>
+                                    <constraint firstItem="ZDc-lS-Qdr" firstAttribute="leading" secondItem="XOr-ve-l31" secondAttribute="leading" id="Jct-ol-1Gt"/>
+                                    <constraint firstAttribute="trailing" secondItem="Epc-yK-ytb" secondAttribute="trailing" id="fc1-pD-SEq"/>
+                                    <constraint firstAttribute="trailing" secondItem="CaF-a2-Igy" secondAttribute="trailing" id="khN-OQ-jAh"/>
+                                    <constraint firstAttribute="trailing" secondItem="dEL-oI-J5R" secondAttribute="trailing" id="s9k-wh-ep5"/>
+                                    <constraint firstItem="Epc-yK-ytb" firstAttribute="leading" secondItem="XOr-ve-l31" secondAttribute="leading" id="sIk-rP-VA1"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZDc-lS-Qdr" secondAttribute="trailing" id="xQV-0a-vWh"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jo8-wf-1KZ"/>
                     </view>
                     <connections>
+                        <outletCollection property="optionItems" destination="CaF-a2-Igy" collectionClass="NSMutableArray" id="uP7-Xg-Z6F"/>
+                        <outletCollection property="optionItems" destination="ZDc-lS-Qdr" collectionClass="NSMutableArray" id="r31-vi-28v"/>
+                        <outletCollection property="optionItems" destination="Epc-yK-ytb" collectionClass="NSMutableArray" id="m7p-r6-ISb"/>
                         <segue destination="01J-lp-oVM" kind="showDetail" identifier="HomeSegue2" id="G8z-d6-YIy"/>
                         <segue destination="tjn-Pv-bHQ" kind="showDetail" identifier="SignUpPageSegoe2" id="PIc-Ra-iu0"/>
+                        <segue destination="TBu-9N-2H4" kind="showDetail" identifier="NewsSegue2" id="kKN-cM-Ncr"/>
+                        <segue destination="KJh-Ho-ECZ" kind="showDetail" identifier="LocationsSegue2" id="vdP-Jy-HFJ"/>
+                        <segue destination="0a9-ff-6CK" kind="showDetail" identifier="SocialSegue2" id="OH4-cm-Jdv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wlu-tx-EYn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -703,6 +784,20 @@
                                             <action selector="optionSelected:" destination="cfg-8w-t1P" eventType="touchUpInside" id="9Rp-3A-fya"/>
                                         </connections>
                                     </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUl-wL-jd9">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="E0u-jn-w1s"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <state key="normal" title="LogOut">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionSelected:" destination="cfg-8w-t1P" eventType="touchUpInside" id="jgl-R1-AZm"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="zcB-wv-7uX" secondAttribute="trailing" id="2xq-Wz-hLn"/>
@@ -723,10 +818,12 @@
                         <outletCollection property="optionItems" destination="zcB-wv-7uX" collectionClass="NSMutableArray" id="G22-Ag-gwa"/>
                         <outletCollection property="optionItems" destination="Jm5-8J-qKY" collectionClass="NSMutableArray" id="V5u-gz-40J"/>
                         <outletCollection property="optionItems" destination="b0g-Z8-1qV" collectionClass="NSMutableArray" id="Aqr-KW-1co"/>
+                        <outletCollection property="optionItems" destination="SUl-wL-jd9" collectionClass="NSMutableArray" id="hMU-fS-mSf"/>
                         <segue destination="01J-lp-oVM" kind="showDetail" identifier="HomeSegue3" id="nmv-qe-qR0"/>
                         <segue destination="TBu-9N-2H4" kind="showDetail" identifier="NewsSegue1" id="8ae-0m-yBk"/>
                         <segue destination="0a9-ff-6CK" kind="showDetail" identifier="SocialSegue1" id="D7h-ij-PeC"/>
                         <segue destination="KJh-Ho-ECZ" kind="showDetail" identifier="LocationsSegue1" id="5ZB-M8-IbX"/>
+                        <segue destination="01J-lp-oVM" kind="showDetail" identifier="LogOutSegue" id="q3f-k0-9cl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfz-nE-ohD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1019,8 +1116,11 @@
         <image name="steak+wrap+2.jpg" width="1000" height="750"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qlm-hE-o2x"/>
-        <segue reference="TdC-di-Xay"/>
-        <segue reference="nmv-qe-qR0"/>
+        <segue reference="vdP-Jy-HFJ"/>
+        <segue reference="OH4-cm-Jdv"/>
+        <segue reference="kKN-cM-Ncr"/>
+        <segue reference="ZLG-rA-08V"/>
+        <segue reference="PIc-Ra-iu0"/>
+        <segue reference="G8z-d6-YIy"/>
     </inferredMetricsTieBreakers>
 </document>
