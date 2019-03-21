@@ -10,6 +10,13 @@ import UIKit
 
 class HomePage: UIViewController {
    
+    @IBOutlet weak var label1: UILabel!
+    
+    
+    @IBAction func slider1(_ sender: UISlider) {
+        label1.text = String(Int(sender.value))
+    }
+    
     @IBOutlet var optionItems: [UIButton]!
     
    

@@ -10,6 +10,14 @@ import UIKit
 
 class GuestPage: UIViewController {
     
+    
+    @IBOutlet weak var label2: UILabel!
+    
+    
+    @IBAction func slider2(_ sender: UISlider) {
+        label2.text = String(Int(sender.value))
+    }
+    
     @IBOutlet var optionItems: [UIButton]!
     
     
