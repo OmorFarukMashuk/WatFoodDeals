@@ -59,6 +59,7 @@ class HomePage: UIViewController {
         case .locations:
             self.performSegue(withIdentifier: "LocationsSegue1", sender: self)
         case .logout:
+            HomeViewController.GlobalVariable.loginflag = false
             self.performSegue(withIdentifier: "LogOutSegue", sender: self)
         default:
             return

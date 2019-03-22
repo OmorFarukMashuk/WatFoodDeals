@@ -14,6 +14,8 @@ class HomeViewController: UIViewController {
 //    let name = "ECE651"
 //    let pw = "1234"
     
+
+    
     @IBOutlet weak var userName: UITextField!
     
     @IBOutlet weak var passWord: UITextField!
@@ -25,7 +27,9 @@ class HomeViewController: UIViewController {
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     
-    
+    struct GlobalVariable{
+        static var loginflag = false
+    }
     
     @IBAction func LoginPressed(_ sender: Any) {
         
@@ -48,7 +52,7 @@ class HomeViewController: UIViewController {
         request.returnsObjectsAsFaults = false
         do {
             
-            var loginflag = false
+            //var loginflag = false
             let result = try context.fetch(request)
             for data in result as! [NSManagedObject] {
                 
@@ -56,13 +60,13 @@ class HomeViewController: UIViewController {
                 if((data.value(forKey: "email") as! String) == userName.text){
                     if((data.value(forKey: "password") as! String) == passWord.text){
                         self.performSegue(withIdentifier: "HomePageSegue", sender: self)
-                        loginflag = true
+                        GlobalVariable.loginflag = true
                     }
                     
                 }
             }
             
-            if(loginflag == false){
+            if(GlobalVariable.loginflag == false){
                 let alert = UIAlertController(title: "Failed", message: "incorrect username/password", preferredStyle: .alert)
                 let action = UIAlertAction(title: "OK", style: .default)
                 alert.addAction(action)

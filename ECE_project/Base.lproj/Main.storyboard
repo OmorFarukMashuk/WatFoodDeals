@@ -1095,6 +1095,7 @@
                                 <connections>
                                     <action selector="HomeSegueMain:" destination="cfg-8w-t1P" eventType="touchUpInside" id="uqb-zS-9NN"/>
                                     <action selector="backButton:" destination="KJh-Ho-ECZ" eventType="touchUpInside" id="Hon-YD-RAJ"/>
+                                    <segue destination="sho-ZC-Whg" kind="showDetail" identifier="LtoGSegue" id="cz0-dM-sJ7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1131,9 +1132,10 @@
     <inferredMetricsTieBreakers>
         <segue reference="5ZB-M8-IbX"/>
         <segue reference="D7h-ij-PeC"/>
-        <segue reference="8ae-0m-yBk"/>
-        <segue reference="yMc-rn-9P5"/>
+        <segue reference="kKN-cM-Ncr"/>
+        <segue reference="sf9-mt-tI7"/>
         <segue reference="PIc-Ra-iu0"/>
-        <segue reference="q3f-k0-9cl"/>
+        <segue reference="cz0-dM-sJ7"/>
+        <segue reference="nmv-qe-qR0"/>
     </inferredMetricsTieBreakers>
 </document>

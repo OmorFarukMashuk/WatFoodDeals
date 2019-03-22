@@ -14,8 +14,16 @@ class Map: UIViewController {
     
     
     @IBAction func backButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "LtoHSegue", sender: self)
+        
+        
+        if(HomeViewController.GlobalVariable.loginflag == true){
+            self.performSegue(withIdentifier: "LtoHSegue", sender: self)
+        }
+        else{
+            self.performSegue(withIdentifier: "LtoGSegue", sender: self)
+        }
     }
+
     
     @IBOutlet weak var MapOutlet: MKMapView!
     
