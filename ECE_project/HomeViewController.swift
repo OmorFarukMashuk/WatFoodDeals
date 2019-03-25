@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
 //    let pw = "1234"
     
 
+   
     
     @IBOutlet weak var userName: UITextField!
     
@@ -32,6 +33,13 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func LoginPressed(_ sender: Any) {
+        
+//        self.performSegue(withIdentifier: "RestaurantEndSegue", sender: self)
+//
+//        self.performSegue(withIdentifier: "UserDealSegue", sender: self)
+        
+        
+        
         
         
         //        if userName.text == "ECE651" && passWord.text == "1234" {
