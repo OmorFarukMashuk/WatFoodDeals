@@ -15,6 +15,20 @@ class SignUpPage: UIViewController {
     @IBOutlet var passtext: UITextField!
     @IBOutlet var confirmpass: UITextField!
     @IBOutlet var emailtext: UITextField!
+    @IBOutlet var nametext: UITextField!
+    
+    @IBOutlet var halalbutton: UIButton!
+    @IBOutlet var vegbutton: UIButton!
+    @IBOutlet var glutenbutton: UIButton!
+    @IBOutlet var continentalbutton: UIButton!
+    @IBOutlet var chinesebutton: UIButton!
+    @IBOutlet var kosherbutton: UIButton!
+    
+    @IBOutlet var cuisinelabel: UILabel!
+    
+    @IBOutlet var usrType: UISegmentedControl!
+    var user = "Customer"
+    
     
     var alertTitle = ""
     var alertMessage = ""
@@ -112,6 +126,42 @@ class SignUpPage: UIViewController {
         ShowAlert()
     }
     
+    @IBAction func UserSegmentChanged(_ sender: Any) {
+        switch usrType.selectedSegmentIndex
+        {
+        case 0:
+            user = "Customer"
+            halalbutton.isHidden = false
+            vegbutton.isHidden = false
+            glutenbutton.isHidden = false
+            continentalbutton.isHidden = false
+            kosherbutton.isHidden = false
+            chinesebutton.isHidden = false
+            cuisinelabel.isHidden = false
+            print(user)
+        case 1:
+            user = "Restaurant"
+            halalbutton.isHidden = true
+            vegbutton.isHidden = true
+            glutenbutton.isHidden = true
+            continentalbutton.isHidden = true
+            kosherbutton.isHidden = true
+            chinesebutton.isHidden = true
+            cuisinelabel.isHidden = true
+            print(user)
+        default:
+            user = "Customer"
+            halalbutton.isHidden = false
+            vegbutton.isHidden = false
+            glutenbutton.isHidden = false
+            continentalbutton.isHidden = false
+            kosherbutton.isHidden = false
+            chinesebutton.isHidden = false
+            cuisinelabel.isHidden = false
+            print(user)
+            break
+        }
+    }
     
     // confirm button listener
     @IBAction func ConfirmRegPressed(_ sender: Any) {
@@ -121,10 +171,13 @@ class SignUpPage: UIViewController {
         let email = self.emailtext!.text
         let pass = self.passtext!.text
         let pass2 = self.confirmpass!.text
+        let name = self.nametext!.text
+       
+
 
 
         do {
-            if ((email?.isEmpty)! || (pass?.isEmpty)!){
+            if ((email?.isEmpty)! || (pass?.isEmpty)!||(name?.isEmpty)!){
                 //self.emailtext.layer.borderColor = UIColor.red.cgColor
                 
                 alertTitle = "Failed"
@@ -147,7 +200,7 @@ class SignUpPage: UIViewController {
 
 
             //Check cuisine selection
-            if(cuisine == ""){
+            if(user == "Customer" && cuisine == ""){
                 alertTitle = "Failed"
                 alertMessage = "Please Select a Cuisine"
                 ShowAlert()
@@ -164,9 +217,12 @@ class SignUpPage: UIViewController {
 
 
             let newUser = NSEntityDescription.insertNewObject(forEntityName: "Users", into: context)
+            
+            newUser.setValue(self.nametext!.text, forKey: "name")
             newUser.setValue(self.emailtext!.text, forKey: "email")
             newUser.setValue(self.passtext!.text, forKey: "password")
             newUser.setValue(cuisine, forKey: "pcuisine")
+            newUser.setValue(user, forKey: "type")
 
             try context.save()
             self.emailtext!.text = ""

@@ -1,20 +1,19 @@
 //
-//  AddDish.swift
+//  AddDishView.swift
 //  ECE_project
 //
-//  Created by Shahriar Real on 2019-03-25.
+//  Created by Omor Faruk Mashuk on 2019-03-25.
 //  Copyright © 2019 Ibrahim  Khalil. All rights reserved.
 //
 
 import UIKit
 
-
-class AddDish : UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class AddDishView: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate{
     
     var dish = ["Halal", "Veg.", "Kosher", "Gluten-free", "Continental", "Chinese"]
     var picker = UIPickerView()
     
-    @IBOutlet weak var Types: UITextField!
+    @IBOutlet var dishTypes: UITextField!
     
     
     override func viewDidLoad() {
@@ -23,7 +22,7 @@ class AddDish : UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
         picker.delegate = self
         picker.dataSource = self
         
-        Types.inputView = picker
+        dishTypes.inputView = picker
     }
     
     
@@ -41,7 +40,8 @@ class AddDish : UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        Types.text = dish[row]
+        dishTypes.text = dish[row]
         self.view.endEditing(false)
     }
+    
 }
