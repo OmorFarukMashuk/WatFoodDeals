@@ -1,13 +1,5 @@
-As a waterloo student: 
-I want to have nice recommendation of foods within budget
-
-
-As a guest:
-I want to see weekly deals for my favourite restaurants.
-
-
-
 As a UW student:
+I want to have nice recommendation of foods within budget.
 
 I want to see the location of the restaurants which are offering great deals.
 
@@ -18,6 +10,10 @@ I want a recommendation of cuisines based on the preferred cuisines I provide du
 (register user), I want to see recommendation of foods filtered according to my preferences (budget, cuisine etc.) alongside with the current top deals offered by the restaurants which, will help me to compare prices. 
 
 (both guest and UW student), I want options like Halal, Vegan, Low-calory, Kosher etc.
+
+
+As a guest:
+I want to see weekly deals for my favourite restaurants.
 
 
 As an user:
