@@ -7,8 +7,19 @@
 //
 
 import UIKit
+import CoreData
 
 class AddDishView: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate{
+    
+    @IBOutlet var dishtext: UITextField!
+    @IBOutlet var pricetext: UITextField!
+    @IBOutlet var typetext: UITextField!
+    @IBOutlet var msgtext: UITextField!
+    
+    var alertTitle = ""
+    var alertMessage = ""
+    
+    var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     var dish = ["Halal", "Veg.", "Kosher", "Gluten-free", "Continental", "Chinese"]
     var picker = UIPickerView()
@@ -43,5 +54,84 @@ class AddDishView: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate
         dishTypes.text = dish[row]
         self.view.endEditing(false)
     }
+    
+    func ShowAlert(){
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+        return
+    }
+    @IBAction func PostNewDish(_ sender: Any) {
+        //let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Deals")
+        //request.predicate = NSPredicate(format: "age = %@", "12")
+        //request.returnsObjectsAsFaults = false
+        do {
+            
+            //var loginflag = false
+            
+            
+            let dt = self.dishtext!.text
+            let tt = self.typetext!.text
+            let pt = self.pricetext!.text
+           
+            if ((dt?.isEmpty)! || (pt?.isEmpty)!||(tt?.isEmpty)!){
+                //self.emailtext.layer.borderColor = UIColor.red.cgColor
+                
+                alertTitle = "Failed"
+                alertMessage = "Please Fill Up Required Fields"
+                ShowAlert()
+                return
+            }
+            
+            
+            
+            
+//            print(self.dishtext!.text!)
+//            print(self.typetext!.text!)
+//            print(self.pricetext!.text!)
+//            print(self.msgtext!.text!)
+//            print(HomeViewController.GlobalVariable.rstname)
+            
+            
+            let newDeal = NSEntityDescription.insertNewObject(forEntityName: "Deals", into: context)
+            
+            //let msg = self.msgtext!.text
+            print("0")
+            newDeal.setValue(self.dishtext!.text, forKey: "dishName")
+            print("1")
+            newDeal.setValue(self.typetext!.text, forKey: "dishType")
+            print("2")
+            let price = Double(self.pricetext!.text!)
+            newDeal.setValue(price, forKey: "price")
+            print("3")
+            newDeal.setValue(self.msgtext!.text, forKey: "message")
+            print("4")
+            newDeal.setValue(HomeViewController.GlobalVariable.rstname, forKey: "resName")
+            print("5")
+            
+            try context.save()
+            self.dishtext!.text = ""
+            self.typetext!.text = ""
+            self.typetext!.text = ""
+            self.pricetext!.text = ""
+            self.msgtext!.text = ""
+            alertTitle = "Done"
+            alertMessage = "Deal Added"
+            ShowAlert()
+            
+            //self.performSegue(withIdentifier: "HomeSegue1", sender: self)
+            
+            
+        } catch {
+            print(error)
+        }
+        
+        
+        
+    }
+    
+    
+    
     
 }

@@ -33,6 +33,7 @@ class HomeViewController: UIViewController {
     
     struct GlobalVariable{
         static var loginflag = false
+        static var rstname = ""
     }
     
     @IBOutlet var UserSegmentChanged: UISegmentedControl!
@@ -74,6 +75,7 @@ class HomeViewController: UIViewController {
                         {
                         case "Restaurant":
                             self.performSegue(withIdentifier: "RestaurantViewSegue", sender: self)
+                            GlobalVariable.rstname = data.value(forKey: "name") as! String
                             GlobalVariable.loginflag = true
                         case "Customer":
                             self.performSegue(withIdentifier: "HomePageSegue", sender: self)

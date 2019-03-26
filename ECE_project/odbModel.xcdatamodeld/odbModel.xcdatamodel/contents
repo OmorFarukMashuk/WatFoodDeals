@@ -2,9 +2,9 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Deals" representedClassName="Deals" syncable="YES" codeGenerationType="class">
         <attribute name="dishName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="dishtype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dishType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="resName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
@@ -15,7 +15,7 @@
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Users" positionX="-63" positionY="-18" width="128" height="120"/>
         <element name="Deals" positionX="-63" positionY="9" width="128" height="120"/>
+        <element name="Users" positionX="-63" positionY="-18" width="128" height="120"/>
     </elements>
 </model>

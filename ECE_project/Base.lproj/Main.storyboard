@@ -62,7 +62,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="zit-A7-yF4"/>
+                        <viewLayoutGuide key="safeArea" id="bX3-rX-hW4"/>
                     </view>
                     <connections>
                         <outlet property="label" destination="cm4-sT-AN4" id="6aP-Ug-HGO"/>
@@ -84,7 +84,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="9My-3R-ruU">
+                                    <navigationItem title="Items" id="9My-3R-ruU">
                                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="og8-rd-jyf">
                                             <connections>
                                                 <action selector="AddButton101:" destination="lcG-EA-4oJ" id="n08-It-bAh"/>
@@ -94,22 +94,26 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A2e-M1-nJK">
-                                <rect key="frame" x="0.0" y="110" width="375" height="557"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hfR-iU-nKD">
+                                <rect key="frame" x="0.0" y="63" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="lcG-EA-4oJ" id="LSd-cH-pGj"/>
+                                    <outlet property="delegate" destination="lcG-EA-4oJ" id="iO7-X4-alB"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Mep-vv-QME"/>
+                        <viewLayoutGuide key="safeArea" id="KRN-Sx-zLZ"/>
                     </view>
                     <connections>
-                        <outlet property="TableView" destination="A2e-M1-nJK" id="Pmd-0J-zMV"/>
+                        <outlet property="tableView" destination="hfR-iU-nKD" id="xYH-ou-d5S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14g-F0-Mfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1708" y="-663.41829085457277"/>
+            <point key="canvasLocation" x="-2596" y="-791"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -221,7 +225,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="gOb-nh-uyR"/>
                     </view>
                     <connections>
                         <outlet property="error" destination="lzh-FO-POD" id="uo6-HK-aSb"/>
@@ -450,10 +454,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="XOr-ve-l31" firstAttribute="leading" secondItem="jo8-wf-1KZ" secondAttribute="leading" constant="290" id="Owh-aD-KGP"/>
-                            <constraint firstItem="XOr-ve-l31" firstAttribute="top" secondItem="jo8-wf-1KZ" secondAttribute="top" constant="32" id="bEy-yQ-btO"/>
+                            <constraint firstItem="XOr-ve-l31" firstAttribute="leading" secondItem="Yq4-SQ-Z9I" secondAttribute="leading" constant="290" id="Owh-aD-KGP"/>
+                            <constraint firstItem="XOr-ve-l31" firstAttribute="top" secondItem="Yq4-SQ-Z9I" secondAttribute="top" constant="32" id="bEy-yQ-btO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="jo8-wf-1KZ"/>
+                        <viewLayoutGuide key="safeArea" id="Yq4-SQ-Z9I"/>
                     </view>
                     <connections>
                         <outlet property="label2" destination="CaA-gw-qTZ" id="PlJ-Qi-ubw"/>
@@ -726,7 +730,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="UtY-r7-uQ8"/>
+                        <viewLayoutGuide key="safeArea" id="wog-Sd-xiH"/>
                     </view>
                     <connections>
                         <outlet property="chinesebutton" destination="pmu-94-nA7" id="vFG-YO-v6E"/>
@@ -977,10 +981,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8ZG-9q-vSH" firstAttribute="top" secondItem="DWb-NF-QDn" secondAttribute="top" constant="30" id="DsY-Nj-1E7"/>
-                            <constraint firstItem="8ZG-9q-vSH" firstAttribute="leading" secondItem="DWb-NF-QDn" secondAttribute="leading" constant="278" id="Io3-ce-Q2z"/>
+                            <constraint firstItem="8ZG-9q-vSH" firstAttribute="top" secondItem="Gch-dF-Vfv" secondAttribute="top" constant="30" id="DsY-Nj-1E7"/>
+                            <constraint firstItem="8ZG-9q-vSH" firstAttribute="leading" secondItem="Gch-dF-Vfv" secondAttribute="leading" constant="278" id="Io3-ce-Q2z"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="DWb-NF-QDn"/>
+                        <viewLayoutGuide key="safeArea" id="Gch-dF-Vfv"/>
                     </view>
                     <connections>
                         <outlet property="label1" destination="8VX-gP-6B3" id="b59-Fj-5Cd"/>
@@ -1090,7 +1094,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="7Ht-5a-suL"/>
+                        <viewLayoutGuide key="safeArea" id="3RL-DQ-6fM"/>
                     </view>
                     <connections>
                         <segue destination="cfg-8w-t1P" kind="showDetail" identifier="NtoHSegue" id="sf9-mt-tI7"/>
@@ -1223,7 +1227,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="XAx-9E-geV"/>
+                        <viewLayoutGuide key="safeArea" id="vRf-Kc-2u4"/>
                     </view>
                     <connections>
                         <segue destination="cfg-8w-t1P" kind="showDetail" identifier="StoHSegue" id="ZLG-rA-08V"/>
@@ -1257,12 +1261,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="caO-N8-JVU" firstAttribute="trailing" secondItem="U2n-Q7-hj7" secondAttribute="trailing" id="1d1-iY-HIK"/>
-                            <constraint firstItem="caO-N8-JVU" firstAttribute="bottom" secondItem="U2n-Q7-hj7" secondAttribute="bottom" id="6SM-6z-1Au"/>
-                            <constraint firstItem="U2n-Q7-hj7" firstAttribute="leading" secondItem="caO-N8-JVU" secondAttribute="leading" id="UCX-Hy-VLk"/>
-                            <constraint firstItem="U2n-Q7-hj7" firstAttribute="top" secondItem="caO-N8-JVU" secondAttribute="top" id="jon-Kt-TEY"/>
+                            <constraint firstItem="knZ-PF-3hz" firstAttribute="trailing" secondItem="U2n-Q7-hj7" secondAttribute="trailing" id="1d1-iY-HIK"/>
+                            <constraint firstItem="knZ-PF-3hz" firstAttribute="bottom" secondItem="U2n-Q7-hj7" secondAttribute="bottom" id="6SM-6z-1Au"/>
+                            <constraint firstItem="U2n-Q7-hj7" firstAttribute="leading" secondItem="knZ-PF-3hz" secondAttribute="leading" id="UCX-Hy-VLk"/>
+                            <constraint firstItem="U2n-Q7-hj7" firstAttribute="top" secondItem="knZ-PF-3hz" secondAttribute="top" id="jon-Kt-TEY"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="caO-N8-JVU"/>
+                        <viewLayoutGuide key="safeArea" id="knZ-PF-3hz"/>
                     </view>
                     <connections>
                         <outlet property="MapOutlet" destination="U2n-Q7-hj7" id="xpC-Bn-Cra"/>
@@ -1348,13 +1352,20 @@
                                 <state key="normal" title="Post">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="PostNewDish:" destination="Oby-zi-hil" eventType="touchUpInside" id="Zb0-VA-p8h"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="L3g-5e-STu"/>
+                        <viewLayoutGuide key="safeArea" id="ym1-2W-V43"/>
                     </view>
                     <connections>
                         <outlet property="dishTypes" destination="cBY-r6-fyC" id="Nni-Mh-iOE"/>
+                        <outlet property="dishtext" destination="jNr-cp-ntY" id="bHs-mf-e2s"/>
+                        <outlet property="msgtext" destination="NL7-4Q-eBr" id="iLk-Ki-eOc"/>
+                        <outlet property="pricetext" destination="tBc-kg-oUX" id="c2u-dW-xQi"/>
+                        <outlet property="typetext" destination="cBY-r6-fyC" id="kd6-L0-1qV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lm-KJ-n8W" userLabel="First Responder" sceneMemberID="firstResponder"/>
