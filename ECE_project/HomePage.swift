@@ -10,7 +10,40 @@ import UIKit
 
 class HomePage: UIViewController {
    
+    @IBAction func HalalButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
+        
+       
 
+    }
+    
+    @IBAction func KosherButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
+    }
+    
+    
+    @IBAction func ContinentalButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
+    }
+    
+    @IBAction func VegButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
+    }
+    
+    @IBAction func ChineseButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
+    }
+    
+    
+    @IBAction func GlutenButton(_ sender: Any) {self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
+        
+    }
+    
+    
+    
+    
+    
+    
     
     @IBAction func AuntysButton(_ sender: Any) {
         self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
