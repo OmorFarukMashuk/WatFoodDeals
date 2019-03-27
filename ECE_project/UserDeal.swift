@@ -22,12 +22,21 @@ class UserDeal : UIViewController{
     
     @IBAction func backsButton(_ sender: Any) {
         
-        HomePage.GlobalVariable.cuisineflag = false
-        HomePage.GlobalVariable.rstrntflag = false
-        costflag = false
-        self.performSegue(withIdentifier: "UserToHomepage1", sender: self)
+        if(HomeViewController.GlobalVariable.loginflag == true){
+            
+            HomePage.GlobalVariable.cuisineflag = false
+            HomePage.GlobalVariable.rstrntflag = false
+            costflag = false
+            self.performSegue(withIdentifier: "UserToHomepage1", sender: self)
+            
+        }
         
-        //        self.performSegue(withIdentifier: "UserToGuest", sender: self)
+        else{
+            self.performSegue(withIdentifier: "UserToGuest", sender: self)
+
+        }
+
+        
         
         
     }

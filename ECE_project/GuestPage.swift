@@ -11,36 +11,55 @@ import UIKit
 class GuestPage: UIViewController {
     
     
+    var alertTitle = "Registration Required"
+    var alertMessage = "Please Sign-Up to Get Preferred Restaurant Deals"
+    @IBOutlet weak var akLabel: UILabel!
+    @IBOutlet weak var shinLabel: UILabel!
+    @IBOutlet weak var kabobLabel: UILabel!
     
+    
+    func ShowAlert(){
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+        return
+    }
     @IBAction func ShinwaButtons(_ sender: Any) {
-        self.performSegue(withIdentifier: "GuestToUser", sender: self)
+        //HomePage.GlobalVariable.rstrntflag = true
+        //HomePage.GlobalVariable.customerReschoice = self.akLabel.text!
+        //self.performSegue(withIdentifier: "GuestToUser", sender: self)
+        ShowAlert()
     }
     
     
     @IBAction func ShinwaMainButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "GuestToUser", sender: self)
+        //HomePage.GlobalVariable.rstrntflag = true
+        //HomePage.GlobalVariable.customerReschoice = self.shinLabel.text!
+        //self.performSegue(withIdentifier: "GuestToUser", sender: self)
+        
+        ShowAlert()
 
     }
     
     
     @IBAction func KabobButtons(_ sender: Any) {
-        self.performSegue(withIdentifier: "GuestToUser", sender: self)
+        //HomePage.GlobalVariable.rstrntflag = true
+        //HomePage.GlobalVariable.customerReschoice = self.kabobLabel.text!
+        //self.performSegue(withIdentifier: "GuestToUser", sender: self)
+        ShowAlert()
 
         
     }
     
     @IBAction func ALLDEAL(_ sender: Any) {
         self.performSegue(withIdentifier: "GuestToUser", sender: self)
+        //ShowAlert()
 
     }
     
     
-    @IBOutlet weak var label2: UILabel!
-    
-    
-    @IBAction func slider2(_ sender: UISlider) {
-        label2.text = String(Int(sender.value))
-    }
+
     
     @IBOutlet var optionItems: [UIButton]!
     

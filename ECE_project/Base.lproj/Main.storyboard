@@ -325,8 +325,8 @@
                                     <action selector="HomePressed2:" destination="sho-ZC-Whg" eventType="touchUpInside" id="pxU-fK-1c7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kabob" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwj-pe-ctY">
-                                <rect key="frame" x="150" y="443" width="87" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kabob Hut" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwj-pe-ctY">
+                                <rect key="frame" x="148" y="443" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -440,6 +440,9 @@
                         <viewLayoutGuide key="safeArea" id="Yq4-SQ-Z9I"/>
                     </view>
                     <connections>
+                        <outlet property="akLabel" destination="iEI-sz-keb" id="RoX-VL-AFs"/>
+                        <outlet property="kabobLabel" destination="Gwj-pe-ctY" id="SY3-kS-lbv"/>
+                        <outlet property="shinLabel" destination="iEI-sz-keb" id="jbT-ho-iZV"/>
                         <outletCollection property="optionItems" destination="CaF-a2-Igy" collectionClass="NSMutableArray" id="uP7-Xg-Z6F"/>
                         <outletCollection property="optionItems" destination="ZDc-lS-Qdr" collectionClass="NSMutableArray" id="r31-vi-28v"/>
                         <outletCollection property="optionItems" destination="Epc-yK-ytb" collectionClass="NSMutableArray" id="m7p-r6-ISb"/>
