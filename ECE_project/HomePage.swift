@@ -10,12 +10,46 @@ import UIKit
 
 class HomePage: UIViewController {
    
-    @IBOutlet weak var label1: UILabel!
+
     
-    
-    @IBAction func slider1(_ sender: UISlider) {
-        label1.text = String(Int(sender.value))
+    @IBAction func AuntysButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
     }
+    
+    
+    
+    @IBAction func ShinwaButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
+
+    }
+    
+    
+    @IBAction func KabobButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
+
+    }
+    
+    
+    @IBAction func MongolianButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
+
+    }
+    
+    
+    @IBAction func AlleyButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
+
+    }
+    
+    
+    @IBAction func DealButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
+
+    }
+    
+    
+    
+
     
     @IBOutlet var optionItems: [UIButton]!
     

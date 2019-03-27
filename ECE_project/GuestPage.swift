@@ -11,6 +11,30 @@ import UIKit
 class GuestPage: UIViewController {
     
     
+    
+    @IBAction func ShinwaButtons(_ sender: Any) {
+        self.performSegue(withIdentifier: "GuestToUser", sender: self)
+    }
+    
+    
+    @IBAction func ShinwaMainButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "GuestToUser", sender: self)
+
+    }
+    
+    
+    @IBAction func KabobButtons(_ sender: Any) {
+        self.performSegue(withIdentifier: "GuestToUser", sender: self)
+
+        
+    }
+    
+    @IBAction func ALLDEAL(_ sender: Any) {
+        self.performSegue(withIdentifier: "GuestToUser", sender: self)
+
+    }
+    
+    
     @IBOutlet weak var label2: UILabel!
     
     
