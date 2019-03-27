@@ -71,6 +71,7 @@ class AddDishView: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate
             //var loginflag = false
             
             
+            print(HomeViewController.GlobalVariable.rstname)
             let dt = self.dishtext!.text
             let tt = self.typetext!.text
             let pt = self.pricetext!.text

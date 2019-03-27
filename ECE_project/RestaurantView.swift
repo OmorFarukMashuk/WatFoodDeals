@@ -13,19 +13,28 @@ import CoreData
 class RestaurantView : UIViewController{
     
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
-    
+    var rname = ""
+    var deallist = [Deals]()
+
     @IBOutlet weak var tableView: UITableView!
     
-    var deallist = [Deals]()
+    func getResName() -> String {
+        return HomeViewController.GlobalVariable.rstname
+    }
     
-    
+
     override func viewDidLoad() {
-        
-        
+        super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Deals")
-        //request.predicate = NSPredicate(format: "dishType = %@", "Kosher")
-        //request.predicate = NSPredicate(format: "price < %@", "2")
+        
+        //let t = String(HomeViewController.GlobalVariable.rstname)
+        //print()
+        request.predicate = NSPredicate(format: "resName = %@", getResName())
+        //request.predicate = NSPredicate(format: "dishType = %@", "Veg.")
+        //request.predicate = NSPredicate(format: "price < %@", "10")
         request.returnsObjectsAsFaults = false
         do {
             
@@ -36,18 +45,10 @@ class RestaurantView : UIViewController{
             print(deallist.count)
             self.tableView.reloadData()
         } catch {}
-        
-        
     }
     
     
-    
-    
-    
     @IBAction func AddButton101(_ sender: Any) {
-        
-        //        self.performSegue(withIdentifier: "AddDishSegue", sender: self)
-        
         self.performSegue(withIdentifier: "AddDishViewSegue", sender: self)
         
         
@@ -56,6 +57,8 @@ class RestaurantView : UIViewController{
 
 extension RestaurantView: UITableViewDataSource {
     func tableView(_ tableView: UITableView,numberOfRowsInSection section: Int) -> Int {
+
+        
         return deallist.count
     }
     
@@ -65,22 +68,14 @@ extension RestaurantView: UITableViewDataSource {
         cell.textLabel?.text = deallist[indexPath.row].dishName
         //cell.detailTextLabel?.text = String(people[indexPath.row].age)
         var text = "C$" + String(deallist[indexPath.row].price)
+        text = text + "   " + deallist[indexPath.row].resName!
         text = text + "   " + deallist[indexPath.row].dishType!
         text = text + "   " + deallist[indexPath.row].message!
 
-//        text = "C$" + deallist[indexPath.row].price + "   " +
-//            deallist[indexPath.row].dishType! + "   " + deallist[indexPath.row].message!
         cell.detailTextLabel?.text = text
-        
-        
-        
         return cell
-        
-        
-        
-        //print("ok")
-        
     }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if(editingStyle == .delete)
         {

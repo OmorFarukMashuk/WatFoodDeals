@@ -52,6 +52,10 @@
                                 <rect key="frame" x="0.0" y="102" width="375" height="560"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="m73-ZN-u56" id="1Yi-kx-bA5"/>
+                                    <outlet property="delegate" destination="m73-ZN-u56" id="nBu-Uj-Vio"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIP-xb-ffm">
                                 <rect key="frame" x="317" y="49" width="53" height="30"/>
@@ -59,6 +63,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="RefreshPressed:" destination="m73-ZN-u56" eventType="touchUpInside" id="nlF-Su-H0F"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRV-2Z-LTV">
                                 <rect key="frame" x="5" y="20" width="47" height="25"/>
@@ -75,6 +82,7 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="cm4-sT-AN4" id="6aP-Ug-HGO"/>
+                        <outlet property="tableView" destination="RV0-CO-Din" id="Rxe-q8-EMK"/>
                         <segue destination="cfg-8w-t1P" kind="showDetail" identifier="UserToHomepage1" id="1iH-m8-tvZ"/>
                         <segue destination="sho-ZC-Whg" kind="showDetail" identifier="UserToGuest" id="ybx-Kd-nzw"/>
                     </connections>
@@ -293,7 +301,7 @@
                                     <action selector="KabobButtons:" destination="sho-ZC-Whg" eventType="touchUpInside" id="SVd-n7-1Cc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aunty's Kitchen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLr-R2-0d7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aunty’s Kitchen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLr-R2-0d7">
                                 <rect key="frame" x="17" y="264" width="151" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -736,11 +744,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tBY-90-IK1">
-                                <rect key="frame" x="6" y="237" width="361" height="430"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                            </containerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aunty's Kitchen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yj0-HW-8lq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aunty’s Kitchen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yj0-HW-8lq">
                                 <rect key="frame" x="22" y="333" width="146" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1007,6 +1011,17 @@
                         <viewLayoutGuide key="safeArea" id="Gch-dF-Vfv"/>
                     </view>
                     <connections>
+                        <outlet property="akLabel" destination="Yj0-HW-8lq" id="3fq-Pq-qiM"/>
+                        <outlet property="alleyLabel" destination="OJs-Ah-wRW" id="Q4V-An-1iz"/>
+                        <outlet property="chineseButton" destination="t12-tc-VXH" id="zPb-VI-o4M"/>
+                        <outlet property="continentalButton" destination="sJR-tR-4ka" id="5WV-fB-JGo"/>
+                        <outlet property="glutenButton" destination="R0M-k1-5hU" id="rBO-db-4CJ"/>
+                        <outlet property="halalButton" destination="3dk-26-kY7" id="PNM-ac-9Du"/>
+                        <outlet property="kabobLabel" destination="qVZ-et-0ce" id="PRG-cQ-15j"/>
+                        <outlet property="kosherButton" destination="qL0-H8-Yze" id="I6O-HV-Kf5"/>
+                        <outlet property="mongolLabel" destination="djV-Ru-Haj" id="Eub-fr-i7T"/>
+                        <outlet property="shinLabel" destination="vgT-01-c3P" id="Ept-6G-sHK"/>
+                        <outlet property="vegButton" destination="lgT-4R-JhK" id="In9-gk-Ffb"/>
                         <outletCollection property="optionItems" destination="zcB-wv-7uX" collectionClass="NSMutableArray" id="G22-Ag-gwa"/>
                         <outletCollection property="optionItems" destination="Jm5-8J-qKY" collectionClass="NSMutableArray" id="V5u-gz-40J"/>
                         <outletCollection property="optionItems" destination="b0g-Z8-1qV" collectionClass="NSMutableArray" id="Aqr-KW-1co"/>
@@ -1405,13 +1420,13 @@
         <image name="steak+wrap+2.jpg" width="1000" height="750"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5ZB-M8-IbX"/>
-        <segue reference="D7h-ij-PeC"/>
-        <segue reference="8ae-0m-yBk"/>
+        <segue reference="vdP-Jy-HFJ"/>
+        <segue reference="OH4-cm-Jdv"/>
+        <segue reference="kKN-cM-Ncr"/>
         <segue reference="1iH-m8-tvZ"/>
         <segue reference="PIc-Ra-iu0"/>
         <segue reference="ybx-Kd-nzw"/>
-        <segue reference="nmv-qe-qR0"/>
-        <segue reference="Ewe-jI-Fvi"/>
+        <segue reference="G8z-d6-YIy"/>
+        <segue reference="FWZ-3Z-cNQ"/>
     </inferredMetricsTieBreakers>
 </document>

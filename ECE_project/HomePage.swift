@@ -7,10 +7,36 @@
 //
 
 import UIKit
-
+import CoreData
 class HomePage: UIViewController {
-   
+    var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+
+    @IBOutlet weak var akLabel: UILabel!
+    @IBOutlet weak var shinLabel: UILabel!
+    @IBOutlet weak var kabobLabel: UILabel!
+    @IBOutlet weak var mongolLabel: UILabel!
+    @IBOutlet weak var alleyLabel: UILabel!
+    
+    @IBOutlet weak var halalButton: UIButton!
+    @IBOutlet weak var kosherButton: UIButton!
+    @IBOutlet weak var continentalButton: UIButton!
+    @IBOutlet weak var vegButton: UIButton!
+    @IBOutlet weak var chineseButton: UIButton!
+    @IBOutlet weak var glutenButton: UIButton!
+    
+    struct GlobalVariable{
+        static var cuisineflag = false
+        static var rstrntflag = false
+        static var alldealflag = false
+        static var customerReschoice = ""
+        static var cuisine = ""
+
+    }
+    
     @IBAction func HalalButton(_ sender: Any) {
+        GlobalVariable.cuisineflag = true
+        GlobalVariable.cuisine = halalButton.currentTitle!
+        print(GlobalVariable.cuisine)
         self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
         
        
@@ -18,25 +44,40 @@ class HomePage: UIViewController {
     }
     
     @IBAction func KosherButton(_ sender: Any) {
+        GlobalVariable.cuisineflag = true
+        GlobalVariable.cuisine = kosherButton.currentTitle!
+
         self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
     }
     
     
     @IBAction func ContinentalButton(_ sender: Any) {
+        GlobalVariable.cuisineflag = true
+        GlobalVariable.cuisine = continentalButton.currentTitle!
+
         self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
     }
     
     @IBAction func VegButton(_ sender: Any) {
+        GlobalVariable.cuisineflag = true
+        GlobalVariable.cuisine = vegButton.currentTitle!
+
         self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
     }
     
     @IBAction func ChineseButton(_ sender: Any) {
+        GlobalVariable.cuisineflag = true
+        GlobalVariable.cuisine = chineseButton.currentTitle!
+
         self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
     }
     
     
     @IBAction func GlutenButton(_ sender: Any) {self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
-        
+        GlobalVariable.cuisineflag = true
+        GlobalVariable.cuisine = glutenButton.currentTitle!
+
+        self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
     }
     
     
@@ -46,36 +87,50 @@ class HomePage: UIViewController {
     
     
     @IBAction func AuntysButton(_ sender: Any) {
+        GlobalVariable.rstrntflag = true
+        GlobalVariable.customerReschoice = self.akLabel.text!
+        //print(GlobalVariable.customerReschoice + "lol")
         self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
+        
+        
+
+    
     }
     
-    
-    
     @IBAction func ShinwaButton(_ sender: Any) {
+        GlobalVariable.rstrntflag = true
+        GlobalVariable.customerReschoice = self.shinLabel.text!
         self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
 
     }
     
     
     @IBAction func KabobButton(_ sender: Any) {
+        GlobalVariable.rstrntflag = true
+        GlobalVariable.customerReschoice = self.kabobLabel.text!
         self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
 
     }
     
     
     @IBAction func MongolianButton(_ sender: Any) {
+        GlobalVariable.rstrntflag = true
+        GlobalVariable.customerReschoice = self.mongolLabel.text!
         self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
 
     }
     
     
     @IBAction func AlleyButton(_ sender: Any) {
+        GlobalVariable.rstrntflag = true
+        GlobalVariable.customerReschoice = self.alleyLabel.text!
         self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
 
     }
     
     
     @IBAction func DealButton(_ sender: Any) {
+        //GlobalVariable.alldealflag = true
         self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
 
     }
