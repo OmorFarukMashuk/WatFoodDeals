@@ -6,8 +6,7 @@ build:
     stage: build
     script:
     - command build
-    only:
-        - CDCI_test
+
     # artifacts:
     #     paths:
     #     - build/
@@ -16,5 +15,4 @@ test:
     stage: test
     script:
     - command test
-    only:
-        - CDCI_test
+    
