@@ -29,6 +29,7 @@
 		EC1B87842231C1890025401D /* Facebook_logo_(square).png in Resources */ = {isa = PBXBuildFile; fileRef = EC1B87832231C1880025401D /* Facebook_logo_(square).png */; };
 		EC1B87862235A8580025401D /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1B87852235A8580025401D /* Map.swift */; };
 		EC611F70222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = EC611F6F222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png */; };
+		ECCB682922500267001EB871 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCB682822500264001EB871 /* images.png */; };
 		ECE0514C222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECE0514B222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		EC1B87832231C1880025401D /* Facebook_logo_(square).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook_logo_(square).png"; sourceTree = "<group>"; };
 		EC1B87852235A8580025401D /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		EC611F6F222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-02-01 at 1.30.31 AM.png"; sourceTree = "<group>"; };
+		ECCB682822500264001EB871 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
 		ECE0514B222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "preview_Aurora-Reloaded-Ocean-2048x2048.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 				0FCE27922207A09E00301E08 /* HomeViewController.swift */,
 				87481BC1222C5F8D00CBF41E /* SignUpPage.swift */,
 				87481BC3222C656200CBF41E /* GuestPage.swift */,
+				ECCB682822500264001EB871 /* images.png */,
 				87481BC7222C888E00CBF41E /* HomePage.swift */,
 				EC1B877D2231A7DA0025401D /* NewsPage.swift */,
 				EC1B877F2231AE7E0025401D /* SocialPage.swift */,
@@ -179,6 +182,7 @@
 				0FCE279B2207A09F00301E08 /* Main.storyboard in Resources */,
 				EC611F70222A55A500347CE0 /* Screen Shot 2019-02-01 at 1.30.31 AM.png in Resources */,
 				0FCE27982207A09F00301E08 /* Assets.xcassets in Resources */,
+				ECCB682922500267001EB871 /* images.png in Resources */,
 				87481BBF222C56D600CBF41E /* Kabob.png in Resources */,
 				87481BBE222C56D600CBF41E /* Shinwa.png in Resources */,
 				87481BBD222C56D600CBF41E /* Aunty's.png in Resources */,
