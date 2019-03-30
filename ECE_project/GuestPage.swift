@@ -53,6 +53,7 @@ class GuestPage: UIViewController {
     }
     
     @IBAction func ALLDEAL(_ sender: Any) {
+        HomePage.GlobalVariable.alldealflag = true
         self.performSegue(withIdentifier: "GuestToUser", sender: self)
         //ShowAlert()
 

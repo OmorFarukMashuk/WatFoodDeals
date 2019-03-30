@@ -1160,6 +1160,7 @@
                     </view>
                     <connections>
                         <segue destination="cfg-8w-t1P" kind="showDetail" identifier="NtoHSegue" id="sf9-mt-tI7"/>
+                        <segue destination="sho-ZC-Whg" kind="showDetail" identifier="NtoGSegue" id="5dE-C3-xQt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdB-7E-qBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1291,6 +1292,7 @@
                     </view>
                     <connections>
                         <segue destination="cfg-8w-t1P" kind="showDetail" identifier="StoHSegue" id="ZLG-rA-08V"/>
+                        <segue destination="sho-ZC-Whg" kind="showDetail" identifier="StoGSegue" id="41a-xM-0cb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMz-a4-LFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1463,9 +1465,9 @@
         <segue reference="vdP-Jy-HFJ"/>
         <segue reference="OH4-cm-Jdv"/>
         <segue reference="kKN-cM-Ncr"/>
-        <segue reference="yMc-rn-9P5"/>
+        <segue reference="ZLG-rA-08V"/>
         <segue reference="TdC-di-Xay"/>
-        <segue reference="JIA-wP-S7L"/>
+        <segue reference="41a-xM-0cb"/>
         <segue reference="G8z-d6-YIy"/>
         <segue reference="915-28-lHT"/>
         <segue reference="xtc-qU-seu"/>

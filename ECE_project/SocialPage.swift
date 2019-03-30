@@ -11,12 +11,14 @@ import UIKit
 class SocialPage: UIViewController {
     
     @IBAction func backButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "StoHSegue", sender: self)
+        
+        if(HomeViewController.GlobalVariable.loginflag == true){
+            self.performSegue(withIdentifier: "StoHSegue", sender: self)
+        }
+        else{
+            self.performSegue(withIdentifier: "StoGSegue", sender: self)
+        }
     }
-    
-    
-  
-    
     
     @IBAction func AntysKitchen(_ sender: Any) {
        
@@ -25,10 +27,6 @@ class SocialPage: UIViewController {
         
         
         }
-        
-        
-    
-    
     @IBAction func Shinwa(_ sender: Any) {
           UIApplication.shared.open(URL(string: "http://www.shinwa.ca")! as URL, options: [:], completionHandler: nil)
         
@@ -40,9 +38,6 @@ class SocialPage: UIViewController {
         UIApplication.shared.open(URL(string: "https://www.facebook.com/KabobHutRestaurant/")! as URL, options: [:], completionHandler: nil)
         
     }
-    
-    
-    
     @IBAction func MongolianGrill(_ sender: Any) {
         
         UIApplication.shared.open(URL(string: "https://www.facebook.com/WaterlooMongolianGrill/")! as URL, options: [:], completionHandler: nil)
@@ -56,16 +51,7 @@ class SocialPage: UIViewController {
         UIApplication.shared.open(URL(string: "https://www.facebook.com/TheAlleyCanada/")! as URL, options: [:], completionHandler: nil)
 
     }
-    
-    
     override func viewDidLoad() {
-        
-        
-        
-        
-        
-        
-        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }

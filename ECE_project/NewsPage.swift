@@ -14,7 +14,13 @@ class NewsPage: UIViewController {
    
     
     @IBAction func backButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "NtoHSegue", sender: self)
+        
+        if(HomeViewController.GlobalVariable.loginflag == true){
+            self.performSegue(withIdentifier: "NtoHSegue", sender: self)
+        }
+        else{
+            self.performSegue(withIdentifier: "NtoGSegue", sender: self)
+        }
     }
     
     
