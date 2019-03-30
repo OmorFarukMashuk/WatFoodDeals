@@ -1,3 +1,23 @@
+# stages:
+# - build
+# - test
+
+# build:
+#     stage: build
+#     script:
+#     - echo "Building"
+#     - mkdir build
+#     - touch build/info.txt
+#     artifacts:
+#         paths:
+#         - build/
+    
+# test:
+#     stage: test
+#     script:
+#     - echo "testing"
+#     - test -f "build/info.txt"
+
 stages:
 - build
 - test
@@ -5,15 +25,16 @@ stages:
 build:
     stage: build
     script:
-    - echo "Building"
-    - mkdir build
-    - touch build/info.txt
-    artifacts:
-        paths:
-        - build/
+    - command build
+    only:
+        - CDCI_test
+    # artifacts:
+    #     paths:
+    #     - build/
     
 test:
     stage: test
     script:
-    - echo "testing"
-    - test -f "build/info.txt"
+    - command test
+    only:
+        - CDCI_test
