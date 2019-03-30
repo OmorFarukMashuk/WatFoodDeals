@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -488,7 +488,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="preview_Aurora-Reloaded-Ocean-2048x2048.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BjL-QA-VOH">
-                                <rect key="frame" x="0.0" y="-1" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xXY-mD-OAt">
@@ -1435,13 +1435,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Alley.png" width="351" height="241"/>
-        <image name="Aunty's.png" width="318" height="312"/>
+        <image name="Alley.png" width="702" height="482"/>
+        <image name="Aunty's.png" width="636" height="624"/>
         <image name="Facebook_logo_(square).png" width="600" height="600"/>
-        <image name="Kabob.png" width="479" height="332"/>
-        <image name="Screen Shot 2019-02-01 at 1.30.31 AM.png" width="184" height="196"/>
-        <image name="Screen Shot 2019-03-03 at 3.50.39 PM.png" width="232" height="103"/>
-        <image name="Shinwa.png" width="356" height="228"/>
+        <image name="Kabob.png" width="958" height="664"/>
+        <image name="Screen Shot 2019-02-01 at 1.30.31 AM.png" width="368" height="392"/>
+        <image name="Screen Shot 2019-03-03 at 3.50.39 PM.png" width="464" height="206"/>
+        <image name="Shinwa.png" width="712" height="456"/>
         <image name="preview_Aurora-Reloaded-Ocean-2048x2048.jpg" width="325" height="350"/>
         <image name="steak+wrap+2.jpg" width="1000" height="750"/>
     </resources>
@@ -1452,7 +1452,7 @@
         <segue reference="yMc-rn-9P5"/>
         <segue reference="PIc-Ra-iu0"/>
         <segue reference="JIA-wP-S7L"/>
-        <segue reference="nmv-qe-qR0"/>
+        <segue reference="Gqr-1P-J5K"/>
         <segue reference="e3l-bQ-hpf"/>
         <segue reference="Ewe-jI-Fvi"/>
     </inferredMetricsTieBreakers>

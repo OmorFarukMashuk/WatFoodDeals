@@ -26,6 +26,7 @@ class UserDeal : UIViewController{
             
             HomePage.GlobalVariable.cuisineflag = false
             HomePage.GlobalVariable.rstrntflag = false
+            HomePage.GlobalVariable.alldealflag = false
             costflag = false
             self.performSegue(withIdentifier: "UserToHomepage1", sender: self)
             
@@ -36,9 +37,6 @@ class UserDeal : UIViewController{
 
         }
 
-        
-        
-        
     }
     
     func getResName() -> String {
@@ -58,24 +56,39 @@ class UserDeal : UIViewController{
     func FetchData(){
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Deals")
         
+        // filter data
         if(HomePage.GlobalVariable.cuisineflag == true){
-            request.predicate = NSPredicate(format: "dishType = %@", getCuisineName())
+            print(getCuisineName())
             
+            if(costflag == true){
+                request.predicate = NSPredicate(format: "price <= %@ AND dishType = %@", label.text!,getCuisineName())
+
+            }
+            else{
+                request.predicate = NSPredicate(format: "dishType = %@", getCuisineName())
+            }
         }
-        
-        if(costflag == true){
-            request.predicate = NSPredicate(format: "price < %@", label.text!)
-            
+        if(HomePage.GlobalVariable.alldealflag == true){
+            if(costflag == true){
+                request.predicate = NSPredicate(format: "price <= %@", label.text!)
+                
+            }
         }
         
         if(HomePage.GlobalVariable.rstrntflag == true){
-            request.predicate = NSPredicate(format: "resName = %@", getResName())
+            if(costflag == true){
+                request.predicate = NSPredicate(format: "price <= %@ AND resName = %@", label.text!,getResName())
+                
+            }
+            else{
+                request.predicate = NSPredicate(format: "resName = %@", getResName())
+            }
 
         }
         
         
-        //request.predicate = NSPredicate(format: "price < %@", "10")
         request.returnsObjectsAsFaults = false
+        
         do {
             
             //var loginflag = false
@@ -101,11 +114,6 @@ class UserDeal : UIViewController{
         costflag = true
         FetchData()
     }
-    
-    
-    
-    
-    
     
 }
 

@@ -130,7 +130,7 @@ class HomePage: UIViewController {
     
     
     @IBAction func DealButton(_ sender: Any) {
-        //GlobalVariable.alldealflag = true
+        GlobalVariable.alldealflag = true
         self.performSegue(withIdentifier: "HomepageToUserEndSegue", sender: self)
 
     }
