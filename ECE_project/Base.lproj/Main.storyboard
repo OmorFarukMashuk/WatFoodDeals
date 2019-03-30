@@ -198,6 +198,7 @@
                                 <rect key="frame" x="165" y="405" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Login"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1408,9 +1409,9 @@
         <segue reference="5ZB-M8-IbX"/>
         <segue reference="D7h-ij-PeC"/>
         <segue reference="8ae-0m-yBk"/>
-        <segue reference="1iH-m8-tvZ"/>
-        <segue reference="PIc-Ra-iu0"/>
-        <segue reference="ybx-Kd-nzw"/>
+        <segue reference="yMc-rn-9P5"/>
+        <segue reference="TdC-di-Xay"/>
+        <segue reference="JIA-wP-S7L"/>
         <segue reference="nmv-qe-qR0"/>
         <segue reference="Ewe-jI-Fvi"/>
     </inferredMetricsTieBreakers>
