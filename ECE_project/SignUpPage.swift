@@ -10,8 +10,8 @@ import UIKit
 import CoreData
 
 class SignUpPage: UIViewController {
-
-
+    
+    
     @IBOutlet var passtext: UITextField!
     @IBOutlet var confirmpass: UITextField!
     @IBOutlet var emailtext: UITextField!
@@ -32,30 +32,30 @@ class SignUpPage: UIViewController {
     
     var alertTitle = ""
     var alertMessage = ""
-
-
+    
+    
     // getting the coredata odb context
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-
+    
     // variable to store user preferred cuisine
     var cuisine = ""
-
+    
     // back button listener
     @IBAction func HomePressed1(_ sender: Any) {
-
+        
         self.performSegue(withIdentifier: "HomeSegue1", sender: self)
     }
-
-
+    
+    
     func UserExists() -> Bool {
         var userflag = false
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
         request.returnsObjectsAsFaults = false
         do {
-
+            
             let result = try context.fetch(request)
             for data in result as! [NSManagedObject] {
-
+                
                 //print(data.value(forKey: "email") as! String)
                 if((data.value(forKey: "email") as! String) == emailtext.text){
                     userflag = true
@@ -65,9 +65,9 @@ class SignUpPage: UIViewController {
             }
         }
         catch {
-
+            
             print(error)
-
+            
         }
         if userflag == true {
             return true
@@ -76,7 +76,7 @@ class SignUpPage: UIViewController {
             return false
         }
     }
-
+    
     func ShowAlert(){
         let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default)
@@ -165,17 +165,17 @@ class SignUpPage: UIViewController {
     
     // confirm button listener
     @IBAction func ConfirmRegPressed(_ sender: Any) {
-
+        
         //getting values from textfiield
-
+        
         let email = self.emailtext!.text
         let pass = self.passtext!.text
         let pass2 = self.confirmpass!.text
         let name = self.nametext!.text
-       
-
-
-
+        
+        
+        
+        
         do {
             if ((email?.isEmpty)! || (pass?.isEmpty)!||(name?.isEmpty)!){
                 //self.emailtext.layer.borderColor = UIColor.red.cgColor
@@ -189,16 +189,16 @@ class SignUpPage: UIViewController {
             //            self.passtext.layer.borderColor = UIColor.red.cgColor
             //            return
             //        }
-
-
+            
+            
             if (pass2 != pass){
                 alertTitle = "Failed"
                 alertMessage = "password not matched"
                 ShowAlert()
                 return
             }
-
-
+            
+            
             //Check cuisine selection
             if(user == "Customer" && cuisine == ""){
                 alertTitle = "Failed"
@@ -206,16 +206,16 @@ class SignUpPage: UIViewController {
                 ShowAlert()
                 return
             }
-
-
+            
+            
             if(UserExists() == true){
                 alertTitle = "Failed"
                 alertMessage = "User ID already exists"
                 ShowAlert()
                 return
             }
-
-
+            
+            
             let newUser = NSEntityDescription.insertNewObject(forEntityName: "Users", into: context)
             
             newUser.setValue(self.nametext!.text, forKey: "name")
@@ -223,7 +223,7 @@ class SignUpPage: UIViewController {
             newUser.setValue(self.passtext!.text, forKey: "password")
             newUser.setValue(cuisine, forKey: "pcuisine")
             newUser.setValue(user, forKey: "type")
-
+            
             try context.save()
             self.emailtext!.text = ""
             self.passtext!.text = ""
@@ -233,17 +233,16 @@ class SignUpPage: UIViewController {
             ShowAlert()
             
             //self.performSegue(withIdentifier: "HomeSegue1", sender: self)
-
-
+            
+            
         } catch {
             print(error)
         }
-
+        
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 }
-

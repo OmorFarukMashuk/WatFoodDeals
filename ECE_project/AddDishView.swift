@@ -62,6 +62,16 @@ class AddDishView: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate
         present(alert, animated: true, completion: nil)
         return
     }
+    @IBAction func backButton(_ sender: Any) {
+        
+        
+            self.performSegue(withIdentifier: "DishToResSegue", sender: self)
+        
+        
+        
+        
+    }
+    
     @IBAction func PostNewDish(_ sender: Any) {
         //let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Deals")
         //request.predicate = NSPredicate(format: "age = %@", "12")

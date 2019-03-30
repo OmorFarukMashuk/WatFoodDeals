@@ -27,6 +27,14 @@ class RestaurantView : UIViewController{
         super.viewDidLoad()
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        
+        
+        HomeViewController.GlobalVariable.loginflag = false
+        self.performSegue(withIdentifier: "ResToHomeSegue", sender: self)
+        
+        }
+    
     override func viewWillAppear(_ animated: Bool) {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Deals")
         
