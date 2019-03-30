@@ -1,37 +1,54 @@
-As a waterloo student: 
-I want to have nice recommendation of foods within budget
-
-
 As a guest:
+
 I want to see weekly deals for my favourite restaurants.
 
+I want to see the deals with images. 
+
+I would like to filter all the deals by cost.
+
+I would like to go to the social media page of the restaurants.
+
+I would like to get latest news about the restaurant deals.
+
+I want to locate the restaurants which are offering great deals in a map.
 
 
 As a UW student:
 
-I want to see the location of the restaurants which are offering great deals.
+I want to locate the restaurants which are offering great deals in a map.
 
-it is nice to have nice meals in a convenient way
+I want to have nice recommendation of foods within budget.
+
+It is nice to have healthy meals in a convenient way.
 
 I want a recommendation of cuisines based on the preferred cuisines I provide during registration.
 
-(register user), I want to see recommendation of foods filtered according to my preferences (budget, cuisine etc.) alongside with the current top deals offered by the restaurants which, will help me to compare prices. 
+I want to see recommendation of foods filtered according to my preferences (budget, cuisine etc.) alongside with the current top deals offered by the restaurants which, will help me to compare prices. 
 
-(both guest and UW student), I want options like Halal, Vegan, Low-calory, Kosher etc.
+I want options like Halal, Vegan, Low-calory, Kosher etc.
 
+I would like to go to the social media page of the restaurants.
 
-As an user:
-
-I want to see the daily specials nearest to my location.
-
-I want to see the deals with images. 
+I would like to get latest news about the restaurant deals.
 
 
 As a developer:
 
-I would like to design a platform for both guest and registered users where the registered users will be titled to extra features and usabilities
+I would like to design a platform for guest, registered users and restaurant managers where the registered users will be entitled to extra features and usabilities and restaurant managers can continuously update and upload their deals and menu.
 
 I want to create some filter options which will enable users to find some better food recommendations.
 
-I want to find the location of the restaurants which provides the best deals.
+I want to add the location of the restaurants which provides the best deals.
 
+I want to add social media pages of the restaurants.
+
+I want to add images of dishes.
+
+
+As a Restaurant Manager:
+
+I want to add my regular menu alongside with my weekly or daily deals.
+
+I would like to write customized messages for my menu.
+
+I would like to categorize my deals like Halal, Vegan etc.
