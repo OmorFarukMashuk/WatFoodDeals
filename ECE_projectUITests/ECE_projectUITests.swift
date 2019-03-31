@@ -100,7 +100,11 @@ class ECE_projectUITests: XCTestCase {
         enterYourEmailTextField.tap()
         app.secureTextFields["Enter Your Password"].tap()
         app.buttons["Login"].tap()
+        
+        
+        
         app.buttons["All Deals"].tap()
+
         app.sliders["50%"].swipeLeft()
         
         let backsButton = app.buttons["backs"]
