@@ -128,7 +128,7 @@ class HomePage: UIViewController {
         case .logout:
             HomeViewController.GlobalVariable.loginflag = false
             self.performSegue(withIdentifier: "LogOutSegue", sender: self)
-        default:
+//        default:
             return
         }
     }

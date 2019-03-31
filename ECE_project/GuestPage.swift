@@ -88,7 +88,7 @@ class GuestPage: UIViewController {
             self.performSegue(withIdentifier: "SocialSegue2", sender: self)
         case .locations:
             self.performSegue(withIdentifier: "LocationsSegue2", sender: self)
-        default:
+//        default:
             return
         }
     }
