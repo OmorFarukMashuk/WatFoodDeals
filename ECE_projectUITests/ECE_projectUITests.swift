@@ -103,7 +103,7 @@ class ECE_projectUITests: XCTestCase {
         
         
         
-        app.buttons["All Deals"].tap()
+       
 
         app.sliders["50%"].swipeLeft()
         
