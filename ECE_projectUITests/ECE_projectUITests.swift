@@ -88,8 +88,8 @@ class ECE_projectUITests: XCTestCase {
         
         
         
-        let app2 = app
-        let app = app2
+        let app = XCUIApplication()
+        
         app.buttons["New User? Sign Up>"].tap()
         
         let window = app.children(matching: .window).element(boundBy: 0)
@@ -105,8 +105,8 @@ class ECE_projectUITests: XCTestCase {
         app.staticTexts["Password"].tap()
         app.staticTexts["Confirm Password"].tap()
         element.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Restaurant"]/*[[".segmentedControls.buttons[\"Restaurant\"]",".buttons[\"Restaurant\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Customer"]/*[[".segmentedControls.buttons[\"Customer\"]",".buttons[\"Customer\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app/*@START_MENU_TOKEN@*/.buttons["Restaurant"]/*[[".segmentedControls.buttons[\"Restaurant\"]",".buttons[\"Restaurant\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app/*@START_MENU_TOKEN@*/.buttons["Customer"]/*[[".segmentedControls.buttons[\"Customer\"]",".buttons[\"Customer\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.buttons["Halal"].tap()
         
         let okButton = app.alerts["Your Selected Cuisine"].buttons["OK"]
@@ -177,12 +177,7 @@ class ECE_projectUITests: XCTestCase {
         app.buttons["Sign-up now for more features>>>"].tap()
         app.buttons["Update your profile with more info>>>"].tap()
         button.tap()
-        XCUIDevice.shared.orientation = .portrait
         
-        let comCanadaEceProjectElement = app2/*@START_MENU_TOKEN@*/.otherElements["com.canada.ECE-project"]/*[[".windows[\"SBSwitcherWindow\"]",".otherElements[\"AppSwitcherContentView\"]",".otherElements[\"ECE_project\"]",".otherElements[\"com.canada.ECE-project\"]"],[[[-1,3],[-1,2],[-1,1,2],[-1,0,1]],[[-1,3],[-1,2],[-1,1,2]],[[-1,3],[-1,2]]],[0]]@END_MENU_TOKEN@*/
-        comCanadaEceProjectElement.swipeUp()
-        comCanadaEceProjectElement.swipeUp()
-        XCUIDevice.shared.orientation = .portrait
         
         
         
