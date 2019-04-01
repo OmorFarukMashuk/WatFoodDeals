@@ -192,9 +192,9 @@ class ECE_projectUITests: XCTestCase {
         
         //existing user test
         app.buttons["New User? Sign Up>"].tap()
-        var newName = "mash"
-        var newPassword = "1234"
-        var newEmail = "mash@gmail.com"
+        let newName = "mash"
+        let newPassword = "1234"
+        let newEmail = "mash@gmail.com"
         
         
         let nameTextField = app.textFields["Enter Name"]
