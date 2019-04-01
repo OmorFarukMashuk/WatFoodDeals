@@ -14,9 +14,6 @@ class HomeViewController: UIViewController {
     //    let name = "ECE651"
     //    let pw = "1234"
     
-    
-    
-    
     @IBOutlet weak var userName: UITextField!
     
     @IBOutlet weak var passWord: UITextField!
@@ -39,30 +36,12 @@ class HomeViewController: UIViewController {
     @IBOutlet var UserSegmentChanged: UISegmentedControl!
     @IBAction func LoginPressed(_ sender: Any) {
         
-        //
-        //        self.performSegue(withIdentifier: "UserDealSegue", sender: self)
         
-        
-        
-        
-        
-        //        if userName.text == "ECE651" && passWord.text == "1234" {
-        //        self.performSegue(withIdentifier: "HomePageSegue", sender: self)
-        //
-        //
-        //        }
-        //
-        //                else {
-        //                    errormessage.text = "Wrong credentials, TRY AGAIN!"
-        //                        return
-        //
-        //                }
-        
-        
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
-        //request.predicate = NSPredicate(format: "age = %@", "12")
-        request.returnsObjectsAsFaults = false
         do {
+            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+            //request.predicate = NSPredicate(format: "age = %@", "12")
+            request.returnsObjectsAsFaults = false
+            
             
             //var loginflag = false
             let result = try context.fetch(request)
@@ -81,10 +60,10 @@ class HomeViewController: UIViewController {
                             self.performSegue(withIdentifier: "HomePageSegue", sender: self)
                             GlobalVariable.loginflag = true
                         default:
-//                            let alert = UIAlertController(title: "Failed", message: "Wrong User Type", preferredStyle: .alert)
-//                            let action = UIAlertAction(title: "OK", style: .default)
-//                            alert.addAction(action)
-//                            present(alert, animated: true, completion: nil)
+                            //                            let alert = UIAlertController(title: "Failed", message: "Wrong User Type", preferredStyle: .alert)
+                            //                            let action = UIAlertAction(title: "OK", style: .default)
+                            //                            alert.addAction(action)
+                            //                            present(alert, animated: true, completion: nil)
                             //return
                             break
                             

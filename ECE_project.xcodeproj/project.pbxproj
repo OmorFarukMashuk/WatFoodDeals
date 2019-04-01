@@ -11,6 +11,8 @@
 		0FCE27932207A09E00301E08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCE27922207A09E00301E08 /* HomeViewController.swift */; };
 		0FCE27982207A09F00301E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FCE27972207A09F00301E08 /* Assets.xcassets */; };
 		0FCE279B2207A09F00301E08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCE27992207A09F00301E08 /* Main.storyboard */; };
+		3F47E2642250930A00A36E35 /* ECE_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F47E2632250930A00A36E35 /* ECE_projectUITests.swift */; };
+		3F47E2722250932200A36E35 /* ECE_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F47E2712250932200A36E35 /* ECE_projectTests.swift */; };
 		3F6A7FD72248C9F0007276BE /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A7FD62248C9F0007276BE /* RestaurantView.swift */; };
 		3F6A7FD92248D862007276BE /* AddDishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A7FD82248D861007276BE /* AddDishView.swift */; };
 		3FA223BD224051AB00D9C7B1 /* odbModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FA223BB224051AB00D9C7B1 /* odbModel.xcdatamodeld */; };
@@ -33,6 +35,23 @@
 		ECE0514C222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECE0514B222A5CF6000FD564 /* preview_Aurora-Reloaded-Ocean-2048x2048.jpg */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3F47E2662250930A00A36E35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FCE27852207A09D00301E08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FCE278C2207A09D00301E08;
+			remoteInfo = ECE_project;
+		};
+		3F47E2742250932200A36E35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FCE27852207A09D00301E08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FCE278C2207A09D00301E08;
+			remoteInfo = ECE_project;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0FCE278D2207A09D00301E08 /* ECE_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECE_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCE27902207A09E00301E08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +59,12 @@
 		0FCE27972207A09F00301E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FCE279A2207A09F00301E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FCE279C2207A09F00301E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F47E2612250930A00A36E35 /* ECE_projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECE_projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F47E2632250930A00A36E35 /* ECE_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECE_projectUITests.swift; sourceTree = "<group>"; };
+		3F47E2652250930A00A36E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F47E26F2250932200A36E35 /* ECE_projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECE_projectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F47E2712250932200A36E35 /* ECE_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECE_projectTests.swift; sourceTree = "<group>"; };
+		3F47E2732250932200A36E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F6A7FD62248C9F0007276BE /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		3F6A7FD82248D861007276BE /* AddDishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDishView.swift; sourceTree = "<group>"; };
 		3FA223BC224051AB00D9C7B1 /* odbModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = odbModel.xcdatamodel; sourceTree = "<group>"; };
@@ -70,6 +95,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F47E25E2250930A00A36E35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F47E26C2250932200A36E35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				0FCE278F2207A09D00301E08 /* ECE_project */,
+				3F47E2622250930A00A36E35 /* ECE_projectUITests */,
+				3F47E2702250932200A36E35 /* ECE_projectTests */,
 				0FCE278E2207A09D00301E08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				0FCE278D2207A09D00301E08 /* ECE_project.app */,
+				3F47E2612250930A00A36E35 /* ECE_projectUITests.xctest */,
+				3F47E26F2250932200A36E35 /* ECE_projectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +164,24 @@
 			path = ECE_project;
 			sourceTree = "<group>";
 		};
+		3F47E2622250930A00A36E35 /* ECE_projectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F47E2632250930A00A36E35 /* ECE_projectUITests.swift */,
+				3F47E2652250930A00A36E35 /* Info.plist */,
+			);
+			path = ECE_projectUITests;
+			sourceTree = "<group>";
+		};
+		3F47E2702250932200A36E35 /* ECE_projectTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F47E2712250932200A36E35 /* ECE_projectTests.swift */,
+				3F47E2732250932200A36E35 /* Info.plist */,
+			);
+			path = ECE_projectTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +202,42 @@
 			productReference = 0FCE278D2207A09D00301E08 /* ECE_project.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3F47E2602250930A00A36E35 /* ECE_projectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F47E2682250930A00A36E35 /* Build configuration list for PBXNativeTarget "ECE_projectUITests" */;
+			buildPhases = (
+				3F47E25D2250930A00A36E35 /* Sources */,
+				3F47E25E2250930A00A36E35 /* Frameworks */,
+				3F47E25F2250930A00A36E35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F47E2672250930A00A36E35 /* PBXTargetDependency */,
+			);
+			name = ECE_projectUITests;
+			productName = ECE_projectUITests;
+			productReference = 3F47E2612250930A00A36E35 /* ECE_projectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3F47E26E2250932200A36E35 /* ECE_projectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F47E2762250932200A36E35 /* Build configuration list for PBXNativeTarget "ECE_projectTests" */;
+			buildPhases = (
+				3F47E26B2250932200A36E35 /* Sources */,
+				3F47E26C2250932200A36E35 /* Frameworks */,
+				3F47E26D2250932200A36E35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F47E2752250932200A36E35 /* PBXTargetDependency */,
+			);
+			name = ECE_projectTests;
+			productName = ECE_projectTests;
+			productReference = 3F47E26F2250932200A36E35 /* ECE_projectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,6 +250,14 @@
 				TargetAttributes = {
 					0FCE278C2207A09D00301E08 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					3F47E2602250930A00A36E35 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0FCE278C2207A09D00301E08;
+					};
+					3F47E26E2250932200A36E35 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0FCE278C2207A09D00301E08;
 					};
 				};
 			};
@@ -170,6 +275,8 @@
 			projectRoot = "";
 			targets = (
 				0FCE278C2207A09D00301E08 /* ECE_project */,
+				3F47E2602250930A00A36E35 /* ECE_projectUITests */,
+				3F47E26E2250932200A36E35 /* ECE_projectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,6 +298,20 @@
 				87481BC6222C75B200CBF41E /* Screen Shot 2019-03-03 at 3.50.39 PM.png in Resources */,
 				EC1B87842231C1890025401D /* Facebook_logo_(square).png in Resources */,
 				87481BCB222C8AD200CBF41E /* steak+wrap+2.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F47E25F2250930A00A36E35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F47E26D2250932200A36E35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +337,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F47E25D2250930A00A36E35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F47E2642250930A00A36E35 /* ECE_projectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F47E26B2250932200A36E35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F47E2722250932200A36E35 /* ECE_projectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F47E2672250930A00A36E35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FCE278C2207A09D00301E08 /* ECE_project */;
+			targetProxy = 3F47E2662250930A00A36E35 /* PBXContainerItemProxy */;
+		};
+		3F47E2752250932200A36E35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FCE278C2207A09D00301E08 /* ECE_project */;
+			targetProxy = 3F47E2742250932200A36E35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0FCE27992207A09F00301E08 /* Main.storyboard */ = {
@@ -352,6 +502,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ECE_project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,6 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ECE_project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,6 +529,80 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F47E2692250930A00A36E35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ECE_projectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waterloo.ECE-projectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ECE_project;
+			};
+			name = Debug;
+		};
+		3F47E26A2250930A00A36E35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ECE_projectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waterloo.ECE-projectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ECE_project;
+			};
+			name = Release;
+		};
+		3F47E2772250932200A36E35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ECE_projectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waterloo.ECE-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECE_project.app/ECE_project";
+			};
+			name = Debug;
+		};
+		3F47E2782250932200A36E35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ECE_projectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waterloo.ECE-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECE_project.app/ECE_project";
 			};
 			name = Release;
 		};
@@ -397,6 +623,24 @@
 			buildConfigurations = (
 				0FCE27A02207A09F00301E08 /* Debug */,
 				0FCE27A12207A09F00301E08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F47E2682250930A00A36E35 /* Build configuration list for PBXNativeTarget "ECE_projectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F47E2692250930A00A36E35 /* Debug */,
+				3F47E26A2250930A00A36E35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F47E2762250932200A36E35 /* Build configuration list for PBXNativeTarget "ECE_projectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F47E2772250932200A36E35 /* Debug */,
+				3F47E2782250932200A36E35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
