@@ -11,6 +11,7 @@ import UIKit
 class GuestPage: UIViewController {
     
     
+    
     var alertTitle = "Registration Required"
     var alertMessage = "Please Sign-Up to Get Preferred Restaurant Deals"
     @IBOutlet weak var akLabel: UILabel!

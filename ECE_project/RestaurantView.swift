@@ -12,6 +12,10 @@ import CoreData
 
 class RestaurantView : UIViewController{
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var rname = ""
     var deallist = [Deals]()
