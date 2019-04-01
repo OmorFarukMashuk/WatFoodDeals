@@ -223,29 +223,29 @@ class ECE_projectUITests: XCTestCase {
         
         
         //new registration test
-        app.buttons["New User? Sign Up>"].tap()
-        newName = "test"
-        newPassword = "1234"
-        newEmail = "testt@gmail.com"
-        
-        nameTextField.tap()
-        nameTextField.typeText(newName)
-        
-        emailTextField.tap()
-        emailTextField.typeText(newEmail)
-        passTextField.tap()
-        passTextField.typeText(newPassword)
-        confirmPassTextField.tap()
-        confirmPassTextField.typeText(newPassword)
-        
-        app2/*@START_MENU_TOKEN@*/.buttons["Restaurant"]/*[[".segmentedControls.buttons[\"Restaurant\"]",".buttons[\"Restaurant\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Customer"]/*[[".segmentedControls.buttons[\"Customer\"]",".buttons[\"Customer\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app.buttons["Halal"].tap()
-        app.alerts["Your Selected Cuisine"].buttons["OK"].tap()
-        
-        app.buttons["Confirm"].tap()
-        app.alerts["Done"].buttons["OK"].tap()
-        app.buttons["Button"].tap()
+//        app.buttons["New User? Sign Up>"].tap()
+//        newName = "test"
+//        newPassword = "1234"
+//        newEmail = "testt@gmail.com"
+//        
+//        nameTextField.tap()
+//        nameTextField.typeText(newName)
+//        
+//        emailTextField.tap()
+//        emailTextField.typeText(newEmail)
+//        passTextField.tap()
+//        passTextField.typeText(newPassword)
+//        confirmPassTextField.tap()
+//        confirmPassTextField.typeText(newPassword)
+//        
+//        app2/*@START_MENU_TOKEN@*/.buttons["Restaurant"]/*[[".segmentedControls.buttons[\"Restaurant\"]",".buttons[\"Restaurant\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+//        app2/*@START_MENU_TOKEN@*/.buttons["Customer"]/*[[".segmentedControls.buttons[\"Customer\"]",".buttons[\"Customer\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+//        app.buttons["Halal"].tap()
+//        app.alerts["Your Selected Cuisine"].buttons["OK"].tap()
+//        
+//        app.buttons["Confirm"].tap()
+//        app.alerts["Done"].buttons["OK"].tap()
+//        app.buttons["Button"].tap()
         
     }
     
