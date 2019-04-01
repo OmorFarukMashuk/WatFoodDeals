@@ -192,9 +192,9 @@ class ECE_projectUITests: XCTestCase {
         
         //existing user test
         app.buttons["New User? Sign Up>"].tap()
-        var newName = "asd"
-        var newPassword = "123"
-        var newEmail = "asd@gmail.com"
+        var newName = "mash"
+        var newPassword = "1234"
+        var newEmail = "mash@gmail.com"
         
         
         let nameTextField = app.textFields["Enter Name"]
@@ -226,7 +226,7 @@ class ECE_projectUITests: XCTestCase {
         app.buttons["New User? Sign Up>"].tap()
         newName = "test"
         newPassword = "1234"
-        newEmail = "test@gmail.com"
+        newEmail = "testt@gmail.com"
         
         nameTextField.tap()
         nameTextField.typeText(newName)
@@ -313,10 +313,9 @@ class ECE_projectUITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct result
         
-        //TestCustomerView()
-        //TestGuestView()
-        //SignUpPageTest()
-        
+        TestCustomerView()
+        TestGuestView()
+        SignUpPageTest()
         RestaurantView()
         
     
